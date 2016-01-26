@@ -1,0 +1,18 @@
+﻿[
+  {
+    "outputFile": "app/css/site.css",
+    "inputFile": "app/css/site-main.scss"
+  },
+  {
+    "outputFile": "app/css/site.css",
+    "inputFile": "app/css/site.less"
+  },
+  {
+    "outputFile": "app/css/siteMain.css",
+    "inputFile": "app/css/siteMain.scss"
+  },
+  {
+    "outputFile": "app/css/site.css",
+    "inputFile": "app/css/site.scss"
+  }
+]

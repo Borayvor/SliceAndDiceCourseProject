@@ -1,0 +1,26 @@
+{
+  "name": "mycuisine",
+  "authors": [
+    "Boray"
+  ],
+  "description": "Slice-and-Dice project.",
+  "main": "",
+  "moduleType": [
+    "es6"
+  ],
+  "license": "MIT",
+  "homepage": "index.html",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "bootstrap": "~3.3.6",
+    "angular": "~1.4.9"
+  }
+}

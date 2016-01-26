@@ -1,0 +1,402 @@
+﻿@font-face {
+    font-family: 'goudy_bookletter_1911';
+    src: url('fonts/Goudy-Bookletter-1911/goudy_bookletter_1911.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'LeagueGothic-Regular';
+    src: url('fonts/League-gothic/LeagueGothic-Regular.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Helvetica-Bold';
+    src: url('fonts/helvetica-bold/Helvetica-Bold.otf') format('opentype');
+}
+
+@mixin linear-gradient ($color_start, $color_middle, $color_end, $pos_start, $pos_middle, $pos_end) {
+    background: $color_start; /* Old browsers */
+    background: -moz-radial-gradient(bottom, ellipse cover, $color_start $pos_start, $color_middle $pos_middle, $color_end $pos_end); /* FF3.6-15 */
+    background: -webkit-radial-gradient(bottom, ellipse cover, $color_start $pos_start, $color_middle $pos_middle, $color_end $pos_end); /* Chrome10-25,Safari5.1-6 */
+    background: -radial-gradient(ellipse at bottom, $color_start $pos_start, $color_middle $pos_middle, $color_end $pos_end); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+@mixin font_normal_LeagueGothic_Regular () {
+    font-family: "LeagueGothic-Regular", serif;
+    font-style: normal;
+}
+
+@mixin nav_links ($color_normal, $color_active) {
+    li {
+        text-transform: uppercase;
+
+        &.active {
+
+            a {
+                font-style: italic;
+                color: $color_active;
+                background-color: transparent;
+            }
+        }
+
+        a {
+            color: $color_normal;
+            text-decoration: none;
+
+            &:hover {
+                color: $color_active;
+            }
+        }
+    }
+}
+
+$carousel_color_start: #866f45;
+$carousel_color_middle: #51331b;
+$carousel_color_end: #452917;
+$carousel_pos_start: 0;
+$carousel_pos_middle: 35%;
+$carousel_pos_end: 100%;
+
+$nav_top_margin_top: 30px;
+$nav_top_background_color: #989180;
+$nav_top_color: #fff;
+$nav_top_button_color_active: #e6dcb2;
+$nav_top_border: none;
+$nav_top_link_border_color: #8e8778;
+$nav_top_height: 67px;
+
+$breadcrumb_height: 72px;
+
+$content_border_bottom: 1px solid #716851;
+$content_items_dark_color: #442917;
+
+$nav_bottom_button_color_active: #a29d79;
+
+$text_shadow_white: 1px 1px 1px #fff;
+$text_shadow_black: 1px 1px 1px rgba(0, 0, 0, 0.6), 0 0 1em black, 0 0 0.2em black;
+$testimonial_box_shadow: 1px 1px 1px rgba(81, 51, 27, 0.6), 0 0 1em #51331b, 0 0 0.2em #51331b;
+
+@media (max-width: 767px) {
+    #wrapper {
+        #myCuisine-header {
+            #nav-main {
+                #myCuisine-navbar-collapse {
+                    float: left !important;
+                    width: 100%;
+
+                    li {
+                        border-bottom: 1px solid $nav_bottom_button_color_active;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+html {
+    overflow: -moz-scrollbars-vertical;
+    overflow-y: scroll;
+}
+
+#wrapper {
+    margin: 0;
+    padding: 0;
+    line-height: 18px;
+    font-family: Georgia, serif;
+    font-size: 12px;
+    color: #716851;
+    background-color: #f2f1e8;
+    text-shadow: $text_shadow_white;
+
+    .browse-content-btn {
+        color: #fff;
+        background-color: #719655;
+        border-radius: 18px;
+        border: 1px solid rgba(65, 58, 39, 0.80);
+        text-shadow: $text_shadow_black;
+        font-style: normal;
+        font-size: 1.3em;
+    }
+
+    .thumb {
+        padding: 0;
+        margin-right: 15px;
+        margin-bottom: 10px;
+        height: 69px;
+        width: 69px;
+    }
+
+    #nav-after {
+        position: absolute;
+        margin: 0;
+        padding: 0;
+        margin-top: $nav_top_margin_top;
+        left: 50%;
+        width: 50%;
+        border: $nav_top_border;
+        border-left: none;
+        border-right: none;
+        background-color: $nav_top_background_color;
+        height: $nav_top_height;
+        z-index: 998;
+        box-shadow: 0 2px 2px black;
+    }
+
+    #myCuisine-header {
+        position: absolute;
+        margin: 0;
+        padding: 0;
+        margin-top: $nav_top_margin_top;
+        z-index: 999;
+        width: 100%;
+
+        #nav-main {
+            border: $nav_top_border;
+            border-right: none;
+            padding: 0;
+            background-color: $nav_top_background_color;
+            color: $nav_top_color;
+            height: $nav_top_height;
+            box-shadow: -2px 2px 2px black;
+
+            .navbar-header {
+                height: $nav_top_height;
+
+                #logo {
+                    height: $nav_top_height;
+                }
+            }
+
+            button {
+
+                &:hover {
+                    background-color: $nav_top_button_color_active;
+                }
+
+                &:focus {
+                    background-color: $nav_top_button_color_active;
+                }
+
+                .icon-bar {
+                    background-color: $nav_top_color;
+                }
+            }
+
+            #myCuisine-navbar-collapse {
+                border: none;
+
+                @include nav_links($nav_top_color, $nav_top_button_color_active);
+
+                li {
+
+                    &.active {
+
+                        a {
+                            line-height: 16px;
+                            border-top: 10px outset $nav_top_link_border_color;
+                            border-bottom: 10px inset $nav_top_link_border_color;
+                            -moz-border-top-colors: $nav_top_link_border_color;
+                            -moz-border-bottom-colors: $nav_top_link_border_color;
+                        }
+                    }
+
+                    a {
+                        text-shadow: $text_shadow_black;
+                        line-height: 36px;
+                    }
+                }
+            }
+        }
+    }
+
+    .header-bg {
+        @include linear-gradient($carousel_color_start, $carousel_color_middle, $carousel_color_end, $carousel_pos_start, $carousel_pos_middle, $carousel_pos_end);
+        color: #fff;
+        min-height: 230px !important;
+
+        .header-title {
+            font-family: LeagueGothic-Regular, serif;
+            text-transform: uppercase;
+            font-size: 4em;
+            text-shadow: $text_shadow_black;
+        }
+
+        .header-body {
+            font-family: Helvetica, Arial, serif;
+            font-weight: bold;
+            font-size: 1.2em;
+            text-shadow: $text_shadow_black;
+        }
+    }
+
+    #myCuisineCarousel {
+
+        #carousel-indicators {
+            bottom: 0;
+        }
+
+        img {
+            width: 100%;
+        }
+    }
+
+    #myCuisine-content-area {
+        background-color: #eeebd0;
+        border-bottom: $content_border_bottom;
+
+        #breadcrumbs {
+            min-height: $breadcrumb_height;
+            background-color: #fbfbf8;
+            border-bottom: $content_border_bottom;
+            margin-bottom: 57px;
+
+            .container {
+                .breadcrumb {
+                    font-size: 1.2em;
+                    margin: 0;
+                    padding: ($breadcrumb_height / 3) 15px ($breadcrumb_height / 3) 0;
+                    list-style: none;
+                    background-color: transparent;
+                    border: none;
+                    text-transform: uppercase;
+                    vertical-align: baseline;
+
+                    a {
+                        color: $nav_bottom_button_color_active;
+                    }
+                }
+
+                .breadcrumb > li + li:before {
+                    a {
+                        color: $nav_bottom_button_color_active;
+                    }
+                }
+
+                .breadcrumb > .active {
+                    color: $content_items_dark_color;
+                }
+            }
+        }
+
+        #slogan {
+            min-height: 132px;
+            background-color: #fbfbf8;
+            margin-bottom: 57px;
+            border-bottom: $content_border_bottom;
+
+            .container {
+                text-align: center;
+                padding-top: 10px;
+                padding-bottom: 17px;
+                color: #b4a48d;
+                font-family: 'goudy_bookletter_1911', Georgia, serif;
+                text-shadow: $text_shadow_white;
+                font-style: normal;
+
+                .slogan-header {
+                    color: #654e2d;
+                }
+
+                .slogan-body {
+                    text-transform: uppercase;
+                }
+            }
+        }
+
+        #content-area-container {
+            text-align: left;
+
+            .content-items {
+                font-style: italic;
+                color: #92907c;
+                margin-bottom: 10px;
+
+                .title {
+                    @include font_normal_LeagueGothic_Regular();
+                    color: #c7c399;
+                    text-transform: uppercase;
+                }
+
+                a {
+                    @include font_normal_LeagueGothic_Regular();
+                    color: $content_items_dark_color;
+                    letter-spacing: -1px;
+                }
+
+                #recommendations {
+
+                    .recommendation {
+                        padding-right: 15px;
+                        padding-left: 15px;
+
+                        h1, h2, h3, h4, h5, h6 {
+                            margin: 0;
+                            padding: 0;
+                        }
+
+                        .recommendation-body {
+                            padding: 0;
+                            margin-bottom: 10px;
+                        }
+                    }
+                }
+
+                #location {
+                    .day {
+                        font-size: 1.5em;
+                    }
+
+                    .clock {
+                        color: $content_items_dark_color;
+                    }
+                }
+
+                #testimonials {
+                    .testimonial {
+                        box-shadow: $testimonial_box_shadow;
+
+                        h1, h2, h3, h4, h5, h6 {
+                            margin: 0;
+                            padding: 0;
+                        }
+                    }
+                }
+            }
+        }
+
+        #btn-browse-menu {
+            .browse-content-btn {
+                background-color: #a9a57e;
+            }
+        }
+    }
+
+    #myCuisine-footer {
+        padding-top: 35px;
+        background-color: #f2f1e8;
+
+        nav {
+            #copiright {
+                color: #92907c;
+                padding-bottom: 25px;
+
+                a {
+                    color: #686650;
+                }
+            }
+
+            .navbar-nav {
+                margin: 0;
+                width: 100%;
+                text-align: center;
+
+                @include nav_links($content_items_dark_color, $nav_bottom_button_color_active);
+
+                li {
+                    float: none;
+                    display: inline-block;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,11 @@
+{
+  "name": "mycuisine",
+  "version": "0.0.1",
+  "description": "",
+  "main": "",
+  "scripts": {       
+    "postinstall": "bower install"
+  },
+  "author": "Boray",
+  "license": "MIT"
+}

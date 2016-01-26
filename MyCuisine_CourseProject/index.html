@@ -1,0 +1,90 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <title>MyCuisine</title>
+    <meta charset="utf-8" />
+    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="app/css/site.min.css" rel="stylesheet" />
+
+    <script src="//www.parsecdn.com/js/parse-1.6.14.min.js"></script>
+
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="bower_components/angular/angular.min.js"></script>
+    <script src="bower_components/angular/angular-route.min.js"></script>
+    <script src="bower_components/angular/angular-cookies.min.js"></script>
+    <script src="bower_components/angular/ui-bootstrap-tpls.min.js"></script>   
+</head>
+
+<body ng-app="MyCuisine" ng-cloak >
+    <div id="wrapper">
+        <div id="nav-after">&nbsp;</div>
+        <header id="myCuisine-header">
+            <nav id="nav-main" class="container nav navbar-default" nav-directive>
+                <div>
+                    <div class="navbar-header">
+                        <button type="button" class="navbar-brand navbar-toggle collapsed" data-toggle="collapse" data-target="#myCuisine-navbar-collapse" aria-expanded="false">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a id="logo" class="navbar-brand" href="#/">
+                            <img src="./app/images/Logo.png" class="center-block" alt="My Cuisine">
+                        </a>
+                    </div>
+
+                    <div id="myCuisine-navbar-collapse" class="collapse navbar-collapse pull-right">
+                        <ul class="nav navbar-nav">
+                            <li name="Home" class="active"><a href="#/">Home</a></li>
+                            <li name="Location"><a href="#/Location">Location</a></li>
+                            <li name="Menu"><a href="#/Menu">Menu</a></li>
+                            <li name="Blog"><a href="#/Blog">Blog</a></li>
+                            <li name="ContactUs"><a href="#/ContactUs">Contact Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!-- ==================================================== -->
+
+        <div id="content" ng-view></div><!-- end #content -->
+        <!-- ==================================================== -->
+
+        <footer id="myCuisine-footer" class="nav navbar-default text-center">
+            <nav id="nav-footer" class="container" nav-directive>
+                <div>
+                    <img src="./app/images/FooterDecoration.png" class="center-block" />
+                    <ul class="nav navbar-nav">
+                        <li name="Home" class="active"><a href="#/">Home</a></li>
+                        <li name="Location"><a href="#/Location">Location</a></li>
+                        <li name="Menu"><a href="#/Menu">Menu</a></li>
+                        <li name="Blog"><a href="#/Blog">Blog</a></li>
+                        <li name="ContactUs"><a href="#/ContactUs">Contact Us</a></li>
+                    </ul>
+                    <div id="copiright">Designed by <a href="#">Elegant WordPress Themes</a> | Powered by <a href="#">Bootstrap</a></div>
+                </div>
+            </nav>
+        </footer>
+
+    </div><!-- end #wrapper -->
+    <!-- scripts -->
+
+    <script src="app/js/app.js"></script>
+    <script src="app/js/common/nav-directive.js"></script>
+
+    <script src="app/js/common/data-service.js"></script>
+    <script src="app/js/common/main-controller.js"></script>
+
+
+    <script src="app/js/home/home-controller.js"></script>
+    
+    <script src="app/js/home/carousel-service.js"></script>
+    <script src="app/js/home/carousel-controller.js"></script>
+
+    <script src="app/js/menu/menu-service.js"></script>
+    <script src="app/js/menu/menu-controller.js"></script>
+</body>
+</html>

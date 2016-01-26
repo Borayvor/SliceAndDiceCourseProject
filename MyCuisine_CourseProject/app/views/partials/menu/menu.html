@@ -1,0 +1,44 @@
+﻿<div class="header-bg">
+    <div class="container">
+        <h1 class="header-title">Some Title</h1>
+        <p class="header-body">
+            Fusce nunc diam suscipit a iaculis ac tristique ac erat
+        </p>
+    </div>
+</div>
+
+<!-- !-- content -->
+
+<div id="myCuisine-content-area">
+    <div id="breadcrumbs">
+        <div class="container">
+            <ol class="breadcrumb pull-left">
+                <li><a href="#/">Home</a></li>                
+                <li class="active">Menu</li>
+            </ol>
+        </div>
+    </div>
+
+    <!-- content-area -->
+
+    <div id="content-area-container" class="container">
+        <div class="content-items row">
+
+            <div class="col-xs-12 col-sm-6 col-md-4">
+                <h3 class="title">Chef's Recommendations</h3>
+                <div class="recommendation row" ng-repeat="menuItem in vm.menuItems">
+                    <div class="thumb col-xs-12 col-sm-4">
+                        <a href="#/">
+                            <img ng-src="{{menuItem.image.url}}" class="img-thumbnail" alt="{{menuItem.title}}">
+                        </a>
+                    </div>
+                    <div class="recommendation-body col-xs-12 col-sm-8">
+                        <h3><a href="#/">{{menuItem.title}}</a></h3>
+                        <p>{{menuItem.description}}</p>
+                    </div>
+                </div>
+            </div>                  
+
+        </div><!-- end .content-items -->  
+    </div>
+</div><!-- end content-area -->
