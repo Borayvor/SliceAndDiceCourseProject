@@ -1,10 +1,10 @@
 ﻿$(function () {
     'use strict';
-        
+
     function config($routeProvider) {
-        
+
         var PARTIALS_PREFIX = 'app/views/partials/';
-        var CONTROLLER_AS_VIEW_MODEL = 'vm';        
+        var CONTROLLER_AS_VIEW_MODEL = 'vm';
 
         $routeProvider
             .when('/', {
@@ -23,6 +23,7 @@
                 controllerAs: CONTROLLER_AS_VIEW_MODEL
             })
             .otherwise({ redirectTo: '/' });
+
     }
 
     function run($http, $cookies, $rootScope, $location) {
@@ -35,10 +36,10 @@
             if (rejection === 'not authorized') {
                 $location.path('/');
             }
-                        
-        });        
+
+        });
     };
-                        
+
     angular.module('MyCuisine.services', []);
     angular.module('MyCuisine.directives', []);
     angular.module('MyCuisine.filters', []);
@@ -48,4 +49,4 @@
         .config(['$routeProvider', config])
         .run(['$http', '$cookies', '$rootScope', '$location', run])
         .constant('baseServiceUrl', 'https://api.parse.com/1/');
-} ());
+}());

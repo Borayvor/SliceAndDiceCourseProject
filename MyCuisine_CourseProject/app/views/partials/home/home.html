@@ -1,5 +1,5 @@
 ﻿<div class="header-bg">
-    <div id="myCuisineCarousel" class="carousel slide" data-ride="carousel" ng-controller="CarouselController as vm">
+    <div id="myCuisineCarousel" class="carousel slide" data-ride="carousel">
         <!-- Indicators -->
         <ol id="carousel-indicators" class="carousel-indicators">
             <li data-target="#myCuisineCarousel" ng-repeat="carouselItem in vm.carouselItems" ng-class="{active: (carouselItem.position === 0)}" data-slide-to="{{carouselItem.position}}"></li>
@@ -8,7 +8,7 @@
         <!-- Wrapper for slides -->
         <div class="carousel-inner">
             <div ng-class="{item: true, active : (carouselItem.position === 0)}" ng-repeat="carouselItem in vm.carouselItems">
-                <img ng-src="{{carouselItem.image.url}}" alt="Slide numder {{carouselItem.position}}">
+                <img ng-src="{{carouselItem.image.url}}" alt="{{carouselItem.title}}">
                 <div class="container">
                     <div class="carousel-caption">
                         <h1 class="header-title">{{carouselItem.title}}</h1>
@@ -52,7 +52,7 @@
     <div id="content-area-container" class="container">
         <div class="content-items row">
 
-            <div id="recommendations" class="col-xs-12 col-sm-6 col-md-4" ng-controller="MenuController as vm">
+            <div id="recommendations" class="col-xs-12 col-sm-6 col-md-4">
                 <h3 class="title">Chef's Recommendations</h3>
                 <div class="recommendation row" ng-show="menuItem.recommendation" ng-repeat="menuItem in vm.menuItems">
                     <div class="thumb col-xs-12 col-sm-4">
@@ -68,17 +68,18 @@
             </div>
 
 
-            <div id="location" class="col-xs-12 col-sm-6 col-md-4">
+            <div id="location" map-directive class="col-xs-12 col-sm-6 col-md-4">
                 <h3 class="title">Location and hours of operation</h3>
-                <div id="map">
-
+                <div class="thumbnail">
+                    <div id="map" ></div>
                 </div>
+                
                 <div>
-                    <span class="day title">Mon-Fri</span>
-                    <span class="clock">8am-6pm</span>
+                    <span class="day title">Mon-Fri: </span>
+                    <span class="clock">9:30 - 18:30</span>
                     <span>&nbsp;</span>
-                    <span class="day title">Sat-Sun</span>
-                    <span class="clock">8am-10pm</span>
+                    <span class="day title">Sat-Sun: </span>
+                    <span class="clock"></span>
                 </div>
             </div>
 

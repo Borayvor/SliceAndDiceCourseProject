@@ -3,9 +3,12 @@
   "version": "0.0.1",
   "description": "",
   "main": "",
-  "scripts": {       
+  "scripts": {
     "postinstall": "bower install"
   },
   "author": "Boray",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "angular-google-maps": "^2.3.1"
+  }
 }

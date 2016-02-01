@@ -93,8 +93,8 @@
     <Content Include="app\images\thumb-7.jpg" />
     <Content Include="app\images\thumb-8.jpg" />
     <Content Include="app\images\thumb-9.jpg" />
+    <Content Include="app\js\common\map-directive.js" />
     <Content Include="app\js\common\nav-directive.js" />
-    <Content Include="app\js\home\carousel-controller.js" />
     <Content Include="app\js\home\carousel-service.js" />
     <Content Include="app\js\menu\menu-controller.js" />
     <Content Include="app\js\menu\menu-service.js" />

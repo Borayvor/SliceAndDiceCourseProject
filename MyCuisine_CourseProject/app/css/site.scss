@@ -77,9 +77,18 @@ $testimonial_box_shadow: 1px 1px 1px rgba(81, 51, 27, 0.6), 0 0 1em #51331b, 0 0
 
 @media (max-width: 767px) {
     #wrapper {
+        #nav-after {
+            display: none;
+        }
+
         #myCuisine-header {
+            position: relative !important;
+            margin-top: 0 !important;
+
             #nav-main {
+
                 #myCuisine-navbar-collapse {
+                    background-color: $nav_top_background_color;
                     float: left !important;
                     width: 100%;
 
@@ -89,12 +98,52 @@ $testimonial_box_shadow: 1px 1px 1px rgba(81, 51, 27, 0.6), 0 0 1em #51331b, 0 0
                 }
             }
         }
+
+        #content {
+            .header-bg {
+                #myCuisineCarousel {
+                    .carousel-inner {
+                        .container {
+                            .carousel-caption {
+                                .header-title {
+                                    display: none !important;
+                                }
+
+                                .header-body {
+                                    display: none !important;
+                                }                                                                
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
+}
+
+@media (max-width: 991px) {
+     #wrapper {
+         #content {
+            .header-bg {
+                #myCuisineCarousel {
+                    .carousel-inner {
+                        .container {
+                            .carousel-caption {                                
+
+                                .header-body {
+                                    display: none !important;
+                                }                                
+                            }
+                        }
+                    }
+                }
+            }
+        }
+     }
 }
 
 
 html {
-    overflow: -moz-scrollbars-vertical;
     overflow-y: scroll;
 }
 
@@ -107,7 +156,7 @@ html {
     color: #716851;
     background-color: #f2f1e8;
     text-shadow: $text_shadow_white;
-
+        
     .browse-content-btn {
         color: #fff;
         background-color: #719655;
@@ -212,20 +261,40 @@ html {
     .header-bg {
         @include linear-gradient($carousel_color_start, $carousel_color_middle, $carousel_color_end, $carousel_pos_start, $carousel_pos_middle, $carousel_pos_end);
         color: #fff;
-        min-height: 230px !important;
 
-        .header-title {
-            font-family: LeagueGothic-Regular, serif;
-            text-transform: uppercase;
-            font-size: 4em;
-            text-shadow: $text_shadow_black;
+        .container {
+
+            .header-title {
+                padding-top: 160px;
+                font-family: LeagueGothic-Regular, serif;
+                text-transform: uppercase;
+                font-size: 4em;
+                text-shadow: $text_shadow_black;
+            }
+
+            .header-body {
+                padding-bottom: 30px;
+                font-family: Helvetica, Arial, serif;
+                font-weight: bold;
+                font-size: 1.2em;
+                text-shadow: $text_shadow_black;
+            }
         }
 
-        .header-body {
-            font-family: Helvetica, Arial, serif;
-            font-weight: bold;
-            font-size: 1.2em;
-            text-shadow: $text_shadow_black;
+        #myCuisineCarousel {
+            .carousel-inner {
+                .container {
+                    .carousel-caption {
+                        .header-title {
+                            padding: 0;
+                        }
+
+                        .header-body {
+                            padding: 0;
+                        }
+                    }
+                }
+            }
         }
     }
 
@@ -342,6 +411,12 @@ html {
                 }
 
                 #location {
+                    #map{
+                        width: 100%;
+                        height: 150px;
+                        
+                    }
+
                     .day {
                         font-size: 1.5em;
                     }
