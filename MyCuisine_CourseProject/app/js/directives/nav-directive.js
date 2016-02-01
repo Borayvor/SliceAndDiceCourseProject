@@ -11,9 +11,9 @@
                 if ($(this).attr("id") === 'logo') {
                     name = $('#myCuisine-navbar-collapse').children("ul").children().first().attr('name');
                 } else {
-                    var name = $(this).parent().attr('name');
+                    name = $(this).parent().attr('name');
                 }
-                
+                                                
                 $('#myCuisine-navbar-collapse li[name=' + name + ']').parent().children('.active').removeClass('active');
                 $('#nav-footer li[name=' + name + ']').parent().children('.active').removeClass('active')
                 

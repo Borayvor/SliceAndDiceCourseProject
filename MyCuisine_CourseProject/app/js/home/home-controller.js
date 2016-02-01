@@ -1,9 +1,9 @@
 (function () {
     'use strict';
        
-    function homeController(carouselService, menuService) {
+    function homeController(carouselService, menuService, locationService) {
         var vm = this;
-        
+                
         vm.carouselItems = {};
         vm.menuItems = {};
 
@@ -17,8 +17,10 @@
                 vm.menuItems = result.results;               
             });
 
+        locationService.getMap();
+
     }
 
     angular.module('MyCuisine.controllers')
-        .controller('HomeController', ['carouselService', 'menuService', homeController]);
+        .controller('HomeController', ['carouselService', 'menuService', 'locationService', homeController]);
 }());
