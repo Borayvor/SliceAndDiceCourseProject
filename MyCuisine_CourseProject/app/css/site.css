@@ -204,6 +204,8 @@ html {
           font-style: normal;
           color: #442917;
           letter-spacing: -1px; }
+        #wrapper #myCuisine-content-area #content-area-container .content-items #location .map-locationpage {
+          height: 400px; }
         #wrapper #myCuisine-content-area #content-area-container .content-items #recommendations .recommendation {
           padding-right: 15px;
           padding-left: 15px; }
@@ -213,12 +215,14 @@ html {
           #wrapper #myCuisine-content-area #content-area-container .content-items #recommendations .recommendation .recommendation-body {
             padding: 0;
             margin-bottom: 10px; }
-        #wrapper #myCuisine-content-area #content-area-container .content-items #location #map {
-          width: 100%;
+        #wrapper #myCuisine-content-area #content-area-container .content-items #location-home .row {
+          padding-right: 15px;
+          padding-left: 15px; }
+        #wrapper #myCuisine-content-area #content-area-container .content-items #location-home .map-homepage {
           height: 150px; }
-        #wrapper #myCuisine-content-area #content-area-container .content-items #location .day {
+        #wrapper #myCuisine-content-area #content-area-container .content-items #location-home .day {
           font-size: 1.5em; }
-        #wrapper #myCuisine-content-area #content-area-container .content-items #location .clock {
+        #wrapper #myCuisine-content-area #content-area-container .content-items #location-home .clock {
           color: #442917; }
         #wrapper #myCuisine-content-area #content-area-container .content-items #testimonials .testimonial {
           box-shadow: 1px 1px 1px rgba(81, 51, 27, 0.6), 0 0 1em #51331b, 0 0 0.2em #51331b; }

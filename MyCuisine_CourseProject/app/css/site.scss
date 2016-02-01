@@ -111,7 +111,7 @@ $testimonial_box_shadow: 1px 1px 1px rgba(81, 51, 27, 0.6), 0 0 1em #51331b, 0 0
 
                                 .header-body {
                                     display: none !important;
-                                }                                                                
+                                }
                             }
                         }
                     }
@@ -122,24 +122,24 @@ $testimonial_box_shadow: 1px 1px 1px rgba(81, 51, 27, 0.6), 0 0 1em #51331b, 0 0
 }
 
 @media (max-width: 991px) {
-     #wrapper {
-         #content {
+    #wrapper {
+        #content {
             .header-bg {
                 #myCuisineCarousel {
                     .carousel-inner {
                         .container {
-                            .carousel-caption {                                
+                            .carousel-caption {
 
                                 .header-body {
                                     display: none !important;
-                                }                                
+                                }
                             }
                         }
                     }
                 }
             }
         }
-     }
+    }
 }
 
 
@@ -156,7 +156,7 @@ html {
     color: #716851;
     background-color: #f2f1e8;
     text-shadow: $text_shadow_white;
-        
+
     .browse-content-btn {
         color: #fff;
         background-color: #719655;
@@ -392,6 +392,12 @@ html {
                     letter-spacing: -1px;
                 }
 
+                #location{
+                    .map-locationpage{
+                        height: 400px;
+                    }
+                }
+
                 #recommendations {
 
                     .recommendation {
@@ -410,11 +416,15 @@ html {
                     }
                 }
 
-                #location {
-                    #map{
-                        width: 100%;
-                        height: 150px;
-                        
+                #location-home {
+
+                    .row {
+                        padding-right: 15px;
+                        padding-left: 15px;                                                                   
+                    }
+
+                    .map-homepage {
+                        height: 150px;                        
                     }
 
                     .day {
