@@ -15,8 +15,6 @@
         menuService.getRecommended()
             .then(function (result) {
                 vm.menuItems = result.results;
-
-                console.log(vm.menuItems);
             });
 
         locationService.getMap();

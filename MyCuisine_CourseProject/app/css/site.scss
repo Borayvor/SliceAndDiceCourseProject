@@ -101,7 +101,7 @@ $testimonial_box_shadow: 1px 1px 1px rgba(81, 51, 27, 0.6), 0 0 1em #51331b, 0 0
 
         #contentMain {
             .contentMain-header {
-                .header-title { 
+                .header-title {
                     padding-top: 30px;
                 }
 
@@ -109,7 +109,7 @@ $testimonial_box_shadow: 1px 1px 1px rgba(81, 51, 27, 0.6), 0 0 1em #51331b, 0 0
                     .carousel-inner {
                         .container {
                             .carousel-caption {
-                                .header-title {                                    
+                                .header-title {
                                     display: none !important;
                                 }
 
@@ -396,8 +396,8 @@ html {
                     letter-spacing: -1px;
                 }
 
-                #location{
-                    .map-locationpage{
+                #location {
+                    .map-locationpage {
                         height: 400px;
                     }
                 }
@@ -424,19 +424,23 @@ html {
 
                     .row {
                         padding-right: 15px;
-                        padding-left: 15px;                                                                   
+                        padding-left: 15px;
                     }
 
                     .map-homepage {
-                        height: 150px;                        
+                        height: 150px;
                     }
 
-                    .day {
-                        font-size: 1.5em;
-                    }
+                    .work-time {
+                        padding: 0;
 
-                    .clock {
-                        color: $content_items_dark_color;
+                        .day {
+                            font-size: 1.5em;
+                        }
+
+                        .clock {
+                            color: $content_items_dark_color;
+                        }
                     }
                 }
 
