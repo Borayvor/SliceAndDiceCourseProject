@@ -3,16 +3,23 @@
 
     function menuService(data) {
 
-        var URL = 'classes/Menu';
+        var Url = 'classes/Menu?include=category';
         
-        function getAll() {
-            var query = 'include=category';
+        function getAll() {            
 
-            return data.get(URL, query);
+            return data.get(Url);
+        }
+
+        function getRecommended() {
+
+            var urlRecommended = Url + '&where={"recommendation":true}';
+
+            return data.get(urlRecommended)
         }
 
         return {
-            getAll: getAll
+            getAll: getAll,
+            getRecommended: getRecommended
         }
     }
 
