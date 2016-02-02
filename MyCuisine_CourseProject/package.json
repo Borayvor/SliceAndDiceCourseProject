@@ -9,6 +9,6 @@
   "author": "Boray",
   "license": "MIT",
   "dependencies": {
-    "angular-google-maps": "^2.3.1"
+  
   }
 }
