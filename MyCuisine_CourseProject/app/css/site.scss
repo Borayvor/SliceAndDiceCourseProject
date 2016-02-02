@@ -85,7 +85,7 @@ $testimonial_box_shadow: 1px 1px 1px rgba(81, 51, 27, 0.6), 0 0 1em #51331b, 0 0
             position: relative !important;
             margin-top: 0 !important;
 
-            #nav-main {
+            nav {
 
                 #myCuisine-navbar-collapse {
                     background-color: $nav_top_background_color;
@@ -99,13 +99,17 @@ $testimonial_box_shadow: 1px 1px 1px rgba(81, 51, 27, 0.6), 0 0 1em #51331b, 0 0
             }
         }
 
-        #content {
-            .header-bg {
+        #contentMain {
+            .contentMain-header {
+                .header-title { 
+                    padding-top: 30px;
+                }
+
                 #myCuisineCarousel {
                     .carousel-inner {
                         .container {
                             .carousel-caption {
-                                .header-title {
+                                .header-title {                                    
                                     display: none !important;
                                 }
 
@@ -123,8 +127,8 @@ $testimonial_box_shadow: 1px 1px 1px rgba(81, 51, 27, 0.6), 0 0 1em #51331b, 0 0
 
 @media (max-width: 991px) {
     #wrapper {
-        #content {
-            .header-bg {
+        #contentMain {
+            .contentMain-header {
                 #myCuisineCarousel {
                     .carousel-inner {
                         .container {
@@ -199,7 +203,7 @@ html {
         z-index: 999;
         width: 100%;
 
-        #nav-main {
+        nav {
             border: $nav_top_border;
             border-right: none;
             padding: 0;
@@ -258,7 +262,7 @@ html {
         }
     }
 
-    .header-bg {
+    .contentMain-header {
         @include linear-gradient($carousel_color_start, $carousel_color_middle, $carousel_color_end, $carousel_pos_start, $carousel_pos_middle, $carousel_pos_end);
         color: #fff;
 
@@ -309,7 +313,7 @@ html {
         }
     }
 
-    #myCuisine-content-area {
+    #contentMain-content-area {
         background-color: #eeebd0;
         border-bottom: $content_border_bottom;
 

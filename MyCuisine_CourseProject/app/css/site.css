@@ -16,19 +16,21 @@
   #wrapper #myCuisine-header {
     position: relative !important;
     margin-top: 0 !important; }
-    #wrapper #myCuisine-header #nav-main #myCuisine-navbar-collapse {
+    #wrapper #myCuisine-header nav #myCuisine-navbar-collapse {
       background-color: #989180;
       float: left !important;
       width: 100%; }
-      #wrapper #myCuisine-header #nav-main #myCuisine-navbar-collapse li {
+      #wrapper #myCuisine-header nav #myCuisine-navbar-collapse li {
         border-bottom: 1px solid #a29d79; }
-  #wrapper #content .header-bg #myCuisineCarousel .carousel-inner .container .carousel-caption .header-title {
+  #wrapper #contentMain .contentMain-header .header-title {
+    padding-top: 30px; }
+  #wrapper #contentMain .contentMain-header #myCuisineCarousel .carousel-inner .container .carousel-caption .header-title {
     display: none !important; }
-  #wrapper #content .header-bg #myCuisineCarousel .carousel-inner .container .carousel-caption .header-body {
+  #wrapper #contentMain .contentMain-header #myCuisineCarousel .carousel-inner .container .carousel-caption .header-body {
     display: none !important; } }
 
 @media (max-width: 991px) {
-  #wrapper #content .header-bg #myCuisineCarousel .carousel-inner .container .carousel-caption .header-body {
+  #wrapper #contentMain .contentMain-header #myCuisineCarousel .carousel-inner .container .carousel-caption .header-body {
     display: none !important; } }
 
 html {
@@ -78,7 +80,7 @@ html {
     margin-top: 30px;
     z-index: 999;
     width: 100%; }
-    #wrapper #myCuisine-header #nav-main {
+    #wrapper #myCuisine-header nav {
       border: none;
       border-right: none;
       padding: 0;
@@ -86,39 +88,39 @@ html {
       color: #fff;
       height: 67px;
       box-shadow: -2px 2px 2px black; }
-      #wrapper #myCuisine-header #nav-main .navbar-header {
+      #wrapper #myCuisine-header nav .navbar-header {
         height: 67px; }
-        #wrapper #myCuisine-header #nav-main .navbar-header #logo {
+        #wrapper #myCuisine-header nav .navbar-header #logo {
           height: 67px; }
-      #wrapper #myCuisine-header #nav-main button:hover {
+      #wrapper #myCuisine-header nav button:hover {
         background-color: #e6dcb2; }
-      #wrapper #myCuisine-header #nav-main button:focus {
+      #wrapper #myCuisine-header nav button:focus {
         background-color: #e6dcb2; }
-      #wrapper #myCuisine-header #nav-main button .icon-bar {
+      #wrapper #myCuisine-header nav button .icon-bar {
         background-color: #fff; }
-      #wrapper #myCuisine-header #nav-main #myCuisine-navbar-collapse {
+      #wrapper #myCuisine-header nav #myCuisine-navbar-collapse {
         border: none; }
-        #wrapper #myCuisine-header #nav-main #myCuisine-navbar-collapse li {
+        #wrapper #myCuisine-header nav #myCuisine-navbar-collapse li {
           text-transform: uppercase; }
-          #wrapper #myCuisine-header #nav-main #myCuisine-navbar-collapse li.active a {
+          #wrapper #myCuisine-header nav #myCuisine-navbar-collapse li.active a {
             font-style: italic;
             color: #e6dcb2;
             background-color: transparent; }
-          #wrapper #myCuisine-header #nav-main #myCuisine-navbar-collapse li a {
+          #wrapper #myCuisine-header nav #myCuisine-navbar-collapse li a {
             color: #fff;
             text-decoration: none; }
-            #wrapper #myCuisine-header #nav-main #myCuisine-navbar-collapse li a:hover {
+            #wrapper #myCuisine-header nav #myCuisine-navbar-collapse li a:hover {
               color: #e6dcb2; }
-        #wrapper #myCuisine-header #nav-main #myCuisine-navbar-collapse li.active a {
+        #wrapper #myCuisine-header nav #myCuisine-navbar-collapse li.active a {
           line-height: 16px;
           border-top: 10px outset #8e8778;
           border-bottom: 10px inset #8e8778;
           -moz-border-top-colors: #8e8778;
           -moz-border-bottom-colors: #8e8778; }
-        #wrapper #myCuisine-header #nav-main #myCuisine-navbar-collapse li a {
+        #wrapper #myCuisine-header nav #myCuisine-navbar-collapse li a {
           text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6), 0 0 1em black, 0 0 0.2em black;
           line-height: 36px; }
-  #wrapper .header-bg {
+  #wrapper .contentMain-header {
     background: #866f45;
     /* Old browsers */
     background: -moz-radial-gradient(bottom, ellipse cover, #866f45 0, #51331b 35%, #452917 100%);
@@ -128,35 +130,35 @@ html {
     background: -radial-gradient(ellipse at bottom, #866f45 0, #51331b 35%, #452917 100%);
     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     color: #fff; }
-    #wrapper .header-bg .container .header-title {
+    #wrapper .contentMain-header .container .header-title {
       padding-top: 160px;
       font-family: LeagueGothic-Regular, serif;
       text-transform: uppercase;
       font-size: 4em;
       text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6), 0 0 1em black, 0 0 0.2em black; }
-    #wrapper .header-bg .container .header-body {
+    #wrapper .contentMain-header .container .header-body {
       padding-bottom: 30px;
       font-family: Helvetica, Arial, serif;
       font-weight: bold;
       font-size: 1.2em;
       text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6), 0 0 1em black, 0 0 0.2em black; }
-    #wrapper .header-bg #myCuisineCarousel .carousel-inner .container .carousel-caption .header-title {
+    #wrapper .contentMain-header #myCuisineCarousel .carousel-inner .container .carousel-caption .header-title {
       padding: 0; }
-    #wrapper .header-bg #myCuisineCarousel .carousel-inner .container .carousel-caption .header-body {
+    #wrapper .contentMain-header #myCuisineCarousel .carousel-inner .container .carousel-caption .header-body {
       padding: 0; }
   #wrapper #myCuisineCarousel #carousel-indicators {
     bottom: 0; }
   #wrapper #myCuisineCarousel img {
     width: 100%; }
-  #wrapper #myCuisine-content-area {
+  #wrapper #contentMain-content-area {
     background-color: #eeebd0;
     border-bottom: 1px solid #716851; }
-    #wrapper #myCuisine-content-area #breadcrumbs {
+    #wrapper #contentMain-content-area #breadcrumbs {
       min-height: 72px;
       background-color: #fbfbf8;
       border-bottom: 1px solid #716851;
       margin-bottom: 57px; }
-      #wrapper #myCuisine-content-area #breadcrumbs .container .breadcrumb {
+      #wrapper #contentMain-content-area #breadcrumbs .container .breadcrumb {
         font-size: 1.2em;
         margin: 0;
         padding: 24px 15px 24px 0;
@@ -165,18 +167,18 @@ html {
         border: none;
         text-transform: uppercase;
         vertical-align: baseline; }
-        #wrapper #myCuisine-content-area #breadcrumbs .container .breadcrumb a {
+        #wrapper #contentMain-content-area #breadcrumbs .container .breadcrumb a {
           color: #a29d79; }
-      #wrapper #myCuisine-content-area #breadcrumbs .container .breadcrumb > li + li:before a {
+      #wrapper #contentMain-content-area #breadcrumbs .container .breadcrumb > li + li:before a {
         color: #a29d79; }
-      #wrapper #myCuisine-content-area #breadcrumbs .container .breadcrumb > .active {
+      #wrapper #contentMain-content-area #breadcrumbs .container .breadcrumb > .active {
         color: #442917; }
-    #wrapper #myCuisine-content-area #slogan {
+    #wrapper #contentMain-content-area #slogan {
       min-height: 132px;
       background-color: #fbfbf8;
       margin-bottom: 57px;
       border-bottom: 1px solid #716851; }
-      #wrapper #myCuisine-content-area #slogan .container {
+      #wrapper #contentMain-content-area #slogan .container {
         text-align: center;
         padding-top: 10px;
         padding-bottom: 17px;
@@ -184,52 +186,52 @@ html {
         font-family: 'goudy_bookletter_1911', Georgia, serif;
         text-shadow: 1px 1px 1px #fff;
         font-style: normal; }
-        #wrapper #myCuisine-content-area #slogan .container .slogan-header {
+        #wrapper #contentMain-content-area #slogan .container .slogan-header {
           color: #654e2d; }
-        #wrapper #myCuisine-content-area #slogan .container .slogan-body {
+        #wrapper #contentMain-content-area #slogan .container .slogan-body {
           text-transform: uppercase; }
-    #wrapper #myCuisine-content-area #content-area-container {
+    #wrapper #contentMain-content-area #content-area-container {
       text-align: left; }
-      #wrapper #myCuisine-content-area #content-area-container .content-items {
+      #wrapper #contentMain-content-area #content-area-container .content-items {
         font-style: italic;
         color: #92907c;
         margin-bottom: 10px; }
-        #wrapper #myCuisine-content-area #content-area-container .content-items .title {
+        #wrapper #contentMain-content-area #content-area-container .content-items .title {
           font-family: "LeagueGothic-Regular", serif;
           font-style: normal;
           color: #c7c399;
           text-transform: uppercase; }
-        #wrapper #myCuisine-content-area #content-area-container .content-items a {
+        #wrapper #contentMain-content-area #content-area-container .content-items a {
           font-family: "LeagueGothic-Regular", serif;
           font-style: normal;
           color: #442917;
           letter-spacing: -1px; }
-        #wrapper #myCuisine-content-area #content-area-container .content-items #location .map-locationpage {
+        #wrapper #contentMain-content-area #content-area-container .content-items #location .map-locationpage {
           height: 400px; }
-        #wrapper #myCuisine-content-area #content-area-container .content-items #recommendations .recommendation {
+        #wrapper #contentMain-content-area #content-area-container .content-items #recommendations .recommendation {
           padding-right: 15px;
           padding-left: 15px; }
-          #wrapper #myCuisine-content-area #content-area-container .content-items #recommendations .recommendation h1, #wrapper #myCuisine-content-area #content-area-container .content-items #recommendations .recommendation h2, #wrapper #myCuisine-content-area #content-area-container .content-items #recommendations .recommendation h3, #wrapper #myCuisine-content-area #content-area-container .content-items #recommendations .recommendation h4, #wrapper #myCuisine-content-area #content-area-container .content-items #recommendations .recommendation h5, #wrapper #myCuisine-content-area #content-area-container .content-items #recommendations .recommendation h6 {
+          #wrapper #contentMain-content-area #content-area-container .content-items #recommendations .recommendation h1, #wrapper #contentMain-content-area #content-area-container .content-items #recommendations .recommendation h2, #wrapper #contentMain-content-area #content-area-container .content-items #recommendations .recommendation h3, #wrapper #contentMain-content-area #content-area-container .content-items #recommendations .recommendation h4, #wrapper #contentMain-content-area #content-area-container .content-items #recommendations .recommendation h5, #wrapper #contentMain-content-area #content-area-container .content-items #recommendations .recommendation h6 {
             margin: 0;
             padding: 0; }
-          #wrapper #myCuisine-content-area #content-area-container .content-items #recommendations .recommendation .recommendation-body {
+          #wrapper #contentMain-content-area #content-area-container .content-items #recommendations .recommendation .recommendation-body {
             padding: 0;
             margin-bottom: 10px; }
-        #wrapper #myCuisine-content-area #content-area-container .content-items #location-home .row {
+        #wrapper #contentMain-content-area #content-area-container .content-items #location-home .row {
           padding-right: 15px;
           padding-left: 15px; }
-        #wrapper #myCuisine-content-area #content-area-container .content-items #location-home .map-homepage {
+        #wrapper #contentMain-content-area #content-area-container .content-items #location-home .map-homepage {
           height: 150px; }
-        #wrapper #myCuisine-content-area #content-area-container .content-items #location-home .day {
+        #wrapper #contentMain-content-area #content-area-container .content-items #location-home .day {
           font-size: 1.5em; }
-        #wrapper #myCuisine-content-area #content-area-container .content-items #location-home .clock {
+        #wrapper #contentMain-content-area #content-area-container .content-items #location-home .clock {
           color: #442917; }
-        #wrapper #myCuisine-content-area #content-area-container .content-items #testimonials .testimonial {
+        #wrapper #contentMain-content-area #content-area-container .content-items #testimonials .testimonial {
           box-shadow: 1px 1px 1px rgba(81, 51, 27, 0.6), 0 0 1em #51331b, 0 0 0.2em #51331b; }
-          #wrapper #myCuisine-content-area #content-area-container .content-items #testimonials .testimonial h1, #wrapper #myCuisine-content-area #content-area-container .content-items #testimonials .testimonial h2, #wrapper #myCuisine-content-area #content-area-container .content-items #testimonials .testimonial h3, #wrapper #myCuisine-content-area #content-area-container .content-items #testimonials .testimonial h4, #wrapper #myCuisine-content-area #content-area-container .content-items #testimonials .testimonial h5, #wrapper #myCuisine-content-area #content-area-container .content-items #testimonials .testimonial h6 {
+          #wrapper #contentMain-content-area #content-area-container .content-items #testimonials .testimonial h1, #wrapper #contentMain-content-area #content-area-container .content-items #testimonials .testimonial h2, #wrapper #contentMain-content-area #content-area-container .content-items #testimonials .testimonial h3, #wrapper #contentMain-content-area #content-area-container .content-items #testimonials .testimonial h4, #wrapper #contentMain-content-area #content-area-container .content-items #testimonials .testimonial h5, #wrapper #contentMain-content-area #content-area-container .content-items #testimonials .testimonial h6 {
             margin: 0;
             padding: 0; }
-    #wrapper #myCuisine-content-area #btn-browse-menu .browse-content-btn {
+    #wrapper #contentMain-content-area #btn-browse-menu .browse-content-btn {
       background-color: #a9a57e; }
   #wrapper #myCuisine-footer {
     padding-top: 35px;

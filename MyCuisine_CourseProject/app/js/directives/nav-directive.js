@@ -15,10 +15,10 @@
                 }
                                                 
                 $('#myCuisine-navbar-collapse li[name=' + name + ']').parent().children('.active').removeClass('active');
-                $('#nav-footer li[name=' + name + ']').parent().children('.active').removeClass('active')
+                $('#myCuisine-footer nav li[name=' + name + ']').parent().children('.active').removeClass('active')
                 
                 $('#myCuisine-navbar-collapse li[name=' + name + ']').addClass('active');
-                $('#nav-footer li[name=' + name + ']').addClass('active');
+                $('#myCuisine-footer nav li[name=' + name + ']').addClass('active');
             });            
         }
 
