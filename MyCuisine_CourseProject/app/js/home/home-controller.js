@@ -22,8 +22,6 @@
         testimonialsService.getAll()
             .then(function (result) {
                 vm.testimonial = result.results[0];
-
-                console.log(vm.testimonial);
             });
                 
         locationService.getAll()
