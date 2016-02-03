@@ -396,10 +396,8 @@ html {
                     letter-spacing: -1px;
                 }
 
-                #location {
-                    .map-locationpage {
-                        height: 400px;
-                    }
+                #map {
+                    height: 400px;
                 }
 
                 #recommendations {
@@ -427,7 +425,7 @@ html {
                         padding-left: 15px;
                     }
 
-                    .map-homepage {
+                    #map {
                         height: 150px;
                     }
 

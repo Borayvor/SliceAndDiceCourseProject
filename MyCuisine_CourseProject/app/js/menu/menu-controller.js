@@ -1,19 +1,23 @@
 ﻿(function () {
     'use strict';
 
-    function menuController(menuService) {
+    function menuController(menuService, menuCategoryService) {
         var vm = this;
                 
         vm.menuItems = {};
+        vm.menuCategory = {};
 
         menuService.getAll()
+            .then(function (result) {                
+                vm.menuItems = result.results;                
+            });
+
+        menuCategoryService.getAll()
             .then(function (result) {
-                
-                vm.menuItems = result.results;
-                //console.log(vm.menuItems);
+                vm.menuCategory = result.results;
             });
     }
 
     angular.module('MyCuisine.controllers')
-        .controller('MenuController', ['menuService', menuController]);
+        .controller('MenuController', ['menuService', 'menuCategoryService', menuController]);
 }());

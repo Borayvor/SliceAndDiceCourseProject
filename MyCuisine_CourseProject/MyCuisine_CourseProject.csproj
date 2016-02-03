@@ -97,6 +97,7 @@
     <Content Include="app\js\home\carousel-service.js" />
     <Content Include="app\js\location\location-controller.js" />
     <Content Include="app\js\location\location-service.js" />
+    <Content Include="app\js\menu\menu-category-service.js" />
     <Content Include="app\js\menu\menu-controller.js" />
     <Content Include="app\js\menu\menu-service.js" />
     <Content Include="app\views\partials\location\location.html" />
