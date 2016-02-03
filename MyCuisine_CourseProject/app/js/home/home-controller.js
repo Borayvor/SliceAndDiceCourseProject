@@ -1,12 +1,13 @@
 (function () {
     'use strict';
        
-    function homeController(carouselService, menuService, locationService) {
+    function homeController(carouselService, menuService, locationService, testimonialsService) {
         var vm = this;
                 
         vm.carouselItems = {};
         vm.menuItems = {};
         vm.info = {};
+        vm.testimonial = {};
 
         carouselService.getAll()
             .then(function (result) {
@@ -16,6 +17,13 @@
         menuService.getRecommended()
             .then(function (result) {
                 vm.menuItems = result.results;
+            });
+
+        testimonialsService.getAll()
+            .then(function (result) {
+                vm.testimonial = result.results[0];
+
+                console.log(vm.testimonial);
             });
                 
         locationService.getAll()
@@ -27,5 +35,10 @@
     }
 
     angular.module('MyCuisine.controllers')
-        .controller('HomeController', ['carouselService', 'menuService', 'locationService', homeController]);
+        .controller('HomeController', [
+            'carouselService',
+            'menuService',
+            'locationService',
+            'testimonialsService',
+            homeController]);
 }());

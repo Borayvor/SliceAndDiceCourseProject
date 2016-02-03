@@ -206,6 +206,15 @@ html {
           font-style: normal;
           color: #442917;
           letter-spacing: -1px; }
+        #wrapper #contentMain-content-area #content-area-container .content-items .recommendation {
+          padding-right: 15px;
+          padding-left: 15px; }
+          #wrapper #contentMain-content-area #content-area-container .content-items .recommendation h1, #wrapper #contentMain-content-area #content-area-container .content-items .recommendation h2, #wrapper #contentMain-content-area #content-area-container .content-items .recommendation h3, #wrapper #contentMain-content-area #content-area-container .content-items .recommendation h4, #wrapper #contentMain-content-area #content-area-container .content-items .recommendation h5, #wrapper #contentMain-content-area #content-area-container .content-items .recommendation h6 {
+            margin: 0;
+            padding: 0; }
+          #wrapper #contentMain-content-area #content-area-container .content-items .recommendation .recommendation-body {
+            padding: 0;
+            margin-bottom: 10px; }
         #wrapper #contentMain-content-area #content-area-container .content-items #map {
           height: 400px; }
         #wrapper #contentMain-content-area #content-area-container .content-items #location-page-content p {
@@ -213,15 +222,6 @@ html {
           font-size: 1.3em; }
           #wrapper #contentMain-content-area #content-area-container .content-items #location-page-content p span {
             color: #716851; }
-        #wrapper #contentMain-content-area #content-area-container .content-items #recommendations .recommendation {
-          padding-right: 15px;
-          padding-left: 15px; }
-          #wrapper #contentMain-content-area #content-area-container .content-items #recommendations .recommendation h1, #wrapper #contentMain-content-area #content-area-container .content-items #recommendations .recommendation h2, #wrapper #contentMain-content-area #content-area-container .content-items #recommendations .recommendation h3, #wrapper #contentMain-content-area #content-area-container .content-items #recommendations .recommendation h4, #wrapper #contentMain-content-area #content-area-container .content-items #recommendations .recommendation h5, #wrapper #contentMain-content-area #content-area-container .content-items #recommendations .recommendation h6 {
-            margin: 0;
-            padding: 0; }
-          #wrapper #contentMain-content-area #content-area-container .content-items #recommendations .recommendation .recommendation-body {
-            padding: 0;
-            margin-bottom: 10px; }
         #wrapper #contentMain-content-area #content-area-container .content-items #location-home .row {
           padding-right: 15px;
           padding-left: 15px; }

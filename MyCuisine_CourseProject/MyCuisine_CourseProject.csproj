@@ -95,6 +95,7 @@
     <Content Include="app\images\thumb-9.jpg" />
     <Content Include="app\js\directives\nav-directive.js" />
     <Content Include="app\js\home\carousel-service.js" />
+    <Content Include="app\js\home\testimonials-service.js" />
     <Content Include="app\js\location\location-controller.js" />
     <Content Include="app\js\location\location-service.js" />
     <Content Include="app\js\menu\menu-category-service.js" />

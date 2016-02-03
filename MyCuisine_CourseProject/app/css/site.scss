@@ -396,37 +396,37 @@ html {
                     letter-spacing: -1px;
                 }
 
+                .recommendation {
+                    padding-right: 15px;
+                    padding-left: 15px;
+
+                    h1, h2, h3, h4, h5, h6 {
+                        margin: 0;
+                        padding: 0;
+                    }
+
+                    .recommendation-body {
+                        padding: 0;
+                        margin-bottom: 10px;
+                    }
+                }
+
                 #map {
                     height: 400px;
                 }
 
-                #location-page-content{
-                    p{
+                #location-page-content {
+                    p {
                         color: $content_items_dark_color;
                         font-size: 1.3em;
 
-                        span{
+                        span {
                             color: #716851;
                         }
                     }
                 }
 
                 #recommendations {
-
-                    .recommendation {
-                        padding-right: 15px;
-                        padding-left: 15px;
-
-                        h1, h2, h3, h4, h5, h6 {
-                            margin: 0;
-                            padding: 0;
-                        }
-
-                        .recommendation-body {
-                            padding: 0;
-                            margin-bottom: 10px;
-                        }
-                    }
                 }
 
                 #location-home {

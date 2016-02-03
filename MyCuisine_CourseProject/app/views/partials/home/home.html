@@ -89,15 +89,10 @@
                 <div class="testimonial panel panel-default">
                     <div class="panel-body">
                         <div class="thumb pull-left">
-                            <img src="/app/images/a-2.jpg" class="img-thumbnail" alt="Kate Alves">
+                            <img ng-src="{{vm.testimonial.customer.avatar.url}}" class="img-thumbnail" alt="{{vm.testimonial.customer.firstName}} {{vm.testimonial.customer.lastName}}">
                         </div>
-                        <h3><a href="#/">Kate Alves</a></h3>
-                        <p>
-                            Pellentesque elementum leo et justo dapibus convalli. In justo nibh, congue nec dapibus
-                            ac, placerat eget sem. Nunc consequat felis non elit ultricies in varius massa laoreet.
-                            Aenean lectus nisl, ellentesque in fermentum sit amet, convallis a lorem condimentum
-                            mollis.
-                        </p>
+                        <h3><a href="#/">{{vm.testimonial.customer.firstName}}&nbsp;{{vm.testimonial.customer.lastName}}</a></h3>
+                        <p>{{vm.testimonial.content}}</p>
                     </div>
                 </div>
             </div>
