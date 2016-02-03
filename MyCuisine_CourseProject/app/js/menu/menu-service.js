@@ -14,15 +14,15 @@
 
             var urlRecommended = Url + '&where={"recommendation":true}';
 
-            return data.get(urlRecommended)
+            return data.get(urlRecommended);
         }
 
         return {
             getAll: getAll,
             getRecommended: getRecommended
-        }
+        };
     }
 
     angular.module('MyCuisine.services')
-        .factory('menuService', ['data', menuService])
+        .factory('menuService', ['data', menuService]);
 }());

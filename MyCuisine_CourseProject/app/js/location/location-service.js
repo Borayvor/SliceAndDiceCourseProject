@@ -36,9 +36,9 @@
 
         return {
             getMap: getMap
-        }
+        };
     }
 
     angular.module('MyCuisine.services')
-        .factory('locationService', ['data', locationService])
+        .factory('locationService', ['data', locationService]);
 }());

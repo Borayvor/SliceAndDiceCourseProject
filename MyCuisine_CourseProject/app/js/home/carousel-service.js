@@ -11,9 +11,9 @@
                 
         return {
             getAll: getAll
-        }
+        };
     }
 
     angular.module('MyCuisine.services')
-        .factory('carouselService', ['data', carouselService])
+        .factory('carouselService', ['data', carouselService]);
 }());

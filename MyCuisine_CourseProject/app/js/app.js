@@ -38,7 +38,7 @@
             }
 
         });
-    };
+    }
 
     angular.module('MyCuisine.services', []);
     angular.module('MyCuisine.directives', []);

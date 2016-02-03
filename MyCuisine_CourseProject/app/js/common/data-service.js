@@ -57,7 +57,7 @@
             get: get,
             post: post,
             put: put
-        }
+        };
     }
 
     angular.module('MyCuisine.services')
