@@ -4,8 +4,14 @@
     function locationController(locationService) {
         var vm = this;
 
-        locationService.getMap();
+        vm.info = {};
 
+        locationService.getAll()
+            .then(function (result) {
+                vm.info = result.results[0];
+            });
+
+        locationService.getMap();
     }
 
     angular.module('MyCuisine.controllers')

@@ -382,7 +382,7 @@ html {
             .content-items {
                 font-style: italic;
                 color: #92907c;
-                margin-bottom: 10px;
+                margin-bottom: 30px;
 
                 .title {
                     @include font_normal_LeagueGothic_Regular();
@@ -398,6 +398,17 @@ html {
 
                 #map {
                     height: 400px;
+                }
+
+                #location-page-content{
+                    p{
+                        color: $content_items_dark_color;
+                        font-size: 1.3em;
+
+                        span{
+                            color: #716851;
+                        }
+                    }
                 }
 
                 #recommendations {

@@ -3,8 +3,13 @@
 
     function locationService(data) {
 
-        //var URL = 'classes/HeaderItem';
+        var Url = 'classes/Info';
 
+        function getAll() {
+
+            return data.get(Url);
+        }
+        
         function getMap() {
             var map,
             center,
@@ -35,6 +40,7 @@
         }
 
         return {
+            getAll: getAll,
             getMap: getMap
         };
     }

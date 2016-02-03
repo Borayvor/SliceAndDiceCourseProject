@@ -25,19 +25,22 @@
 
     <div id="content-area-container"  class="container">
         <div class="content-items row" >
-            <div>
+            <div id="location-page-content">
                 <div class="col-xs-12 col-sm-4">
                     <div>
                         <h3 class="title">Address</h3>
-                        <p>1051 Nipomo St San Luis Obispo, CA 93401</p>
+                        <p>{{vm.info.address}}</p>
                     </div>
                     <div>
                         <h3 class="title">Hours of operation</h3>
-                        <p>1051 Nipomo St San Luis Obispo, CA 93401</p>
+                        <p>Monday-Friday: <span>{{vm.info.mondayFriday}}</span></p>
+                        <p>Saturday-Sunday: <span>{{vm.info.saturdaySunday}}</span></p>
                     </div>
                     <div>
                         <h3 class="title">Contact Info</h3>
-                        <p>1051 Nipomo St San Luis Obispo, CA 93401</p>
+                        <p>Email Address: <span>{{vm.info.email}}</span></p>
+                        <p>Telephone: <span>{{vm.info.telephone}}</span></p>
+                        <p>Fax: <span>{{vm.info.fax}}</span></p>
                     </div>
                 </div>
 

@@ -195,7 +195,7 @@ html {
       #wrapper #contentMain-content-area #content-area-container .content-items {
         font-style: italic;
         color: #92907c;
-        margin-bottom: 10px; }
+        margin-bottom: 30px; }
         #wrapper #contentMain-content-area #content-area-container .content-items .title {
           font-family: "LeagueGothic-Regular", serif;
           font-style: normal;
@@ -208,6 +208,11 @@ html {
           letter-spacing: -1px; }
         #wrapper #contentMain-content-area #content-area-container .content-items #map {
           height: 400px; }
+        #wrapper #contentMain-content-area #content-area-container .content-items #location-page-content p {
+          color: #442917;
+          font-size: 1.3em; }
+          #wrapper #contentMain-content-area #content-area-container .content-items #location-page-content p span {
+            color: #716851; }
         #wrapper #contentMain-content-area #content-area-container .content-items #recommendations .recommendation {
           padding-right: 15px;
           padding-left: 15px; }
