@@ -3,7 +3,7 @@
 
     function navDirective() {
 
-        var clickedLink = function clickedLink($scope, $element, $attrs) {
+        function clickedLink($scope, $element, $attrs) {
 
             $element.on('click', 'a', function () {
                 var name;

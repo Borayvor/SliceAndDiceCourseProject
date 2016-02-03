@@ -93,14 +93,21 @@
     <Content Include="app\images\thumb-7.jpg" />
     <Content Include="app\images\thumb-8.jpg" />
     <Content Include="app\images\thumb-9.jpg" />
+    <Content Include="app\js\directives\location-info-directive.js" />
+    <Content Include="app\js\directives\template-directive.js" />
     <Content Include="app\js\directives\nav-directive.js" />
     <Content Include="app\js\home\carousel-service.js" />
     <Content Include="app\js\location\location-controller.js" />
     <Content Include="app\js\location\location-service.js" />
+    <Content Include="app\js\directives\menu-all-directive.js" />
+    <Content Include="app\js\menu\menu-category-service.js" />
     <Content Include="app\js\menu\menu-controller.js" />
     <Content Include="app\js\menu\menu-service.js" />
+    <Content Include="app\views\partials\location\location-info-directive.html" />
     <Content Include="app\views\partials\location\location.html" />
+    <Content Include="app\views\partials\menu\menu-all-directive-directive.html" />
     <Content Include="app\views\partials\menu\menu.html" />
+    <Content Include="app\views\partials\patialsTemplate.html" />
     <Content Include="bower_components\angular-bootstrap\index.js" />
     <Content Include="bower_components\angular-bootstrap\ui-bootstrap-csp.css" />
     <Content Include="bower_components\angular-bootstrap\ui-bootstrap-tpls.js" />
@@ -398,9 +405,7 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="app\views\directives\" />
-  </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

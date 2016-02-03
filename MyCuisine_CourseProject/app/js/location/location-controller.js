@@ -4,7 +4,10 @@
     function locationController(locationService) {
         var vm = this;
 
-        locationService.getMap();
+        vm.header = locationService.getHeader();
+        vm.directive = locationService.getDirective();
+
+        //locationService.initMap();
 
     }
 

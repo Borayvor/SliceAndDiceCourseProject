@@ -17,7 +17,7 @@
                 vm.menuItems = result.results;
             });
 
-        locationService.getMap();
+        locationService.initMap();
 
     }
 

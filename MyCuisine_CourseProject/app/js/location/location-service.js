@@ -3,9 +3,20 @@
 
     function locationService(data) {
 
-        //var URL = 'classes/HeaderItem';
+        function getHeader() {
+            return {
+                title: 'Location',
+                body: 'Fusce nunc diam suscipit a iaculis ac tristique ac erat...'
+            };
+        }
 
-        function getMap() {
+        function getDirective() {
+            return {
+                name: 'location-info-directive'
+            };
+        }
+
+        function initMap() {
             var map,
             center,
             marker,
@@ -34,8 +45,12 @@
             }, 100);
         }
 
+        
+
         return {
-            getMap: getMap
+            getHeader: getHeader,
+            getDirective: getDirective,
+            initMap: initMap            
         };
     }
 

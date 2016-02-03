@@ -1,0 +1,35 @@
+﻿<!-- header -->
+
+<div class="contentMain-header">
+    <div class="container">
+        <div>
+            <h1 class="header-title">{{vm.header.title}}</h1>
+            <p class="header-body">
+                {{vm.header.body}}
+            </p>
+        </div>
+    </div><!-- end .container -->
+</div><!-- end .contentMain-header -->
+
+<!-- content -->
+
+<div id="contentMain-content-area">
+    <div id="breadcrumbs">
+        <div class="container">
+            <ol class="breadcrumb pull-left">
+                <li><a href="#/">Home</a></li>
+                <li class="active">{{vm.header.title}}</li>
+            </ol>
+        </div><!-- end .container -->
+    </div><!-- end .breadcrumbs -->
+
+    <!-- content-area -->
+
+    <div id="content-area-container" class="container">
+        <div class="content-items row" template-directive>
+
+            
+                       
+        </div><!-- end .content-items -->
+    </div><!-- end #content-area-container -->
+</div><!-- end #contentMain-content-area -->

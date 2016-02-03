@@ -12,13 +12,13 @@
                 controller: 'HomeController',
                 controllerAs: CONTROLLER_AS_VIEW_MODEL
             })
-            .when('/Location', {
-                templateUrl: PARTIALS_PREFIX + 'location/location.html',
+            .when('/location', {
+                templateUrl: PARTIALS_PREFIX + 'patialsTemplate.html',
                 controller: 'LocationController',
                 controllerAs: CONTROLLER_AS_VIEW_MODEL
             })
-            .when('/Menu', {
-                templateUrl: PARTIALS_PREFIX + 'menu/menu.html',
+            .when('/menu', {
+                templateUrl: PARTIALS_PREFIX + 'patialsTemplate.html',
                 controller: 'MenuController',
                 controllerAs: CONTROLLER_AS_VIEW_MODEL
             })

@@ -33,11 +33,11 @@
 
                     <div id="myCuisine-navbar-collapse" class="collapse navbar-collapse pull-right">
                         <ul class="nav navbar-nav">
-                            <li name="Home" class="active"><a href="#/">Home</a></li>
-                            <li name="Location"><a href="#/Location">Location</a></li>
-                            <li name="Menu"><a href="#/Menu">Menu</a></li>
-                            <li name="Blog"><a href="#/Blog">Blog</a></li>
-                            <li name="ContactUs"><a href="#/ContactUs">Contact Us</a></li>
+                            <li name="home" class="active"><a href="#/">Home</a></li>
+                            <li name="location"><a href="#/location">Location</a></li>
+                            <li name="menu"><a href="#/menu">Menu</a></li>
+                            <li name="blog"><a href="#/blog">Blog</a></li>
+                            <li name="contactus"><a href="#/contact-us">Contact Us</a></li>
                         </ul>
                     </div>
                 </div>
@@ -46,7 +46,7 @@
 
         <!-- ==================================================== -->
 
-        <div id="contentMain" ng-view></div><!-- end #content -->
+        <div id="contentMain" ng-view ></div><!-- end #content -->
         <!-- ==================================================== -->
 
         <footer id="myCuisine-footer" class="nav navbar-default text-center">
@@ -54,11 +54,11 @@
                 <div>
                     <img src="./app/images/FooterDecoration.png" class="center-block" />
                     <ul class="nav navbar-nav">
-                        <li name="Home" class="active"><a href="#/">Home</a></li>
-                        <li name="Location"><a href="#/Location">Location</a></li>
-                        <li name="Menu"><a href="#/Menu">Menu</a></li>
-                        <li name="Blog"><a href="#/Blog">Blog</a></li>
-                        <li name="ContactUs"><a href="#/ContactUs">Contact Us</a></li>
+                        <li name="home" class="active"><a href="#/">Home</a></li>
+                        <li name="location"><a href="#/location">Location</a></li>
+                        <li name="menu"><a href="#/menu">Menu</a></li>
+                        <li name="blog"><a href="#/blog">Blog</a></li>
+                        <li name="contactus"><a href="#/contact-us">Contact Us</a></li>
                     </ul>
                     <div id="copiright">Designed by <a href="#">Elegant WordPress Themes</a> | Powered by <a href="#">Bootstrap</a></div>
                 </div>
@@ -81,11 +81,15 @@
     <script src="app/js/app.js"></script>
     <script src="app/js/common/data-service.js"></script>
     <script src="app/js/common/main-controller.js"></script>
+    <script src="app/js/directives/location-info-directive.js"></script>
+    <script src="app/js/directives/menu-all-directive.js"></script>
     <script src="app/js/directives/nav-directive.js"></script>
+    <script src="app/js/directives/template-directive.js"></script>
     <script src="app/js/home/carousel-service.js"></script>
     <script src="app/js/home/home-controller.js"></script>
     <script src="app/js/location/location-controller.js"></script>
     <script src="app/js/location/location-service.js"></script>
+    <script src="app/js/menu/menu-category-service.js"></script>
     <script src="app/js/menu/menu-controller.js"></script>
     <script src="app/js/menu/menu-service.js"></script>
     <!-- endinject -->
