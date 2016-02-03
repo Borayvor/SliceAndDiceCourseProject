@@ -95,9 +95,9 @@ gulp.task('html', ['css', 'scripts'], function () {
     
 
     return target
-        .pipe(inject(cssSources))
-        .pipe(inject(vendorSources, { starttag: '<!-- inject:vendors:{{ext}} -->' }))
-        .pipe(inject(appSources))
+        .pipe(inject(cssSources, { relative: true }))
+        .pipe(inject(vendorSources, { starttag: '<!-- inject:vendors:{{ext}} -->', relative: true }))
+        .pipe(inject(appSources, { relative: true }))
         //.pipe(minifyHTML({ conditionals: true }))
 		.pipe(rename('index.html'))
 		.pipe(gulp.dest('./'));
