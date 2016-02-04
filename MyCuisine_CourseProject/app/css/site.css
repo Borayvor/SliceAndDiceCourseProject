@@ -20,7 +20,10 @@
       background-color: #989180;
       float: left !important;
       width: 100%; }
+      #wrapper #myCuisine-header nav #myCuisine-navbar-collapse .navbar-nav {
+        margin: 0 -15px; }
       #wrapper #myCuisine-header nav #myCuisine-navbar-collapse li {
+        text-align: center;
         border-bottom: 1px solid #a29d79; }
   #wrapper #contentMain .contentMain-header .header-title {
     padding-top: 30px; }
@@ -30,8 +33,16 @@
     display: none !important; } }
 
 @media (max-width: 991px) {
+  #wrapper #contentMain .contentMain-header #myCuisineCarousel .carousel-inner .container .carousel-caption .header-title {
+    font-size: 3em !important; }
   #wrapper #contentMain .contentMain-header #myCuisineCarousel .carousel-inner .container .carousel-caption .header-body {
     display: none !important; } }
+
+@media (max-width: 1199px) {
+  #wrapper #contentMain .contentMain-header #myCuisineCarousel .carousel-inner .container .carousel-caption .header-title {
+    font-size: 3em !important; }
+  #wrapper #contentMain .contentMain-header #myCuisineCarousel .carousel-inner .container .carousel-caption .header-body {
+    font-size: 1em !important; } }
 
 html {
   overflow-y: scroll; }

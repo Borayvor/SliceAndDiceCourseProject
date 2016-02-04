@@ -92,7 +92,12 @@ $testimonial_box_shadow: 1px 1px 1px rgba(81, 51, 27, 0.6), 0 0 1em #51331b, 0 0
                     float: left !important;
                     width: 100%;
 
+                    .navbar-nav {
+                        margin: 0 -15px;
+                    }
+
                     li {
+                        text-align: center;
                         border-bottom: 1px solid $nav_bottom_button_color_active;
                     }
                 }
@@ -133,6 +138,9 @@ $testimonial_box_shadow: 1px 1px 1px rgba(81, 51, 27, 0.6), 0 0 1em #51331b, 0 0
                     .carousel-inner {
                         .container {
                             .carousel-caption {
+                                .header-title {
+                                    font-size: 3em !important;
+                                }
 
                                 .header-body {
                                     display: none !important;
@@ -146,6 +154,29 @@ $testimonial_box_shadow: 1px 1px 1px rgba(81, 51, 27, 0.6), 0 0 1em #51331b, 0 0
     }
 }
 
+@media (max-width: 1199px) {
+    #wrapper {
+        #contentMain {
+            .contentMain-header {
+                #myCuisineCarousel {
+                    .carousel-inner {
+                        .container {
+                            .carousel-caption {
+                                .header-title {
+                                    font-size: 3em !important;
+                                }
+
+                                .header-body {
+                                    font-size: 1em !important;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 
 html {
     overflow-y: scroll;
