@@ -7,8 +7,9 @@
         vm.header = locationService.getHeader();
         vm.directive = locationService.getDirective();
 
-        //locationService.initMap();
+        locationService.initMap();
 
+        console.log('location');
     }
 
     angular.module('MyCuisine.controllers')

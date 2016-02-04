@@ -21,6 +21,8 @@
             });
     }
 
+    
+
     angular.module('MyCuisine.controllers')
-        .controller('MenuController', ['menuService', 'menuCategoryService', menuController]);
+        .controller('MenuController', ['menuService', 'menuCategoryService', menuController]);    
 }());

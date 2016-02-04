@@ -1,6 +1,6 @@
 ﻿<div class="col-xs-12 col-sm-6 col-md-4" ng-repeat="category in vm.menuCategory">
     <h3 class="title">{{category.name}}</h3>
-    <div class="recommendation row" ng-repeat="menuItem in vm.menuItems">
+    <div class="recommendation row" ng-show="category.name === menuItem.category.name" ng-repeat="menuItem in vm.menuItems">
         <div class="thumb col-xs-12 col-sm-4">
             <a href="#/{{menuItem.category.name}}/{{menuItem.title}}">
                 <img ng-src="{{menuItem.image.url}}" class="img-thumbnail" alt="{{menuItem.title}}">

@@ -5,7 +5,7 @@
 
         var PARTIALS_PREFIX = 'app/views/partials/';
         var CONTROLLER_AS_VIEW_MODEL = 'vm';
-
+        
         $routeProvider
             .when('/', {
                 templateUrl: PARTIALS_PREFIX + 'home/home.html',
