@@ -324,9 +324,11 @@ html {
         }
 
         #myCuisineCarousel {
-            #carousel-indicators {
-                bottom: 0;
+
+            .carousel-indicators {
+                bottom: -5px;  
             }
+
 
             img {
                 width: 100%;
