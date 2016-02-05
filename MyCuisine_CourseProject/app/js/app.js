@@ -12,12 +12,12 @@
                 controller: 'HomeController',
                 controllerAs: CONTROLLER_AS_VIEW_MODEL
             })
-            .when('/Location', {
+            .when('/Home/Location', {
                 templateUrl: PARTIALS_PREFIX + 'location/location.html',
                 controller: 'LocationController',
                 controllerAs: CONTROLLER_AS_VIEW_MODEL
             })
-            .when('/Menu', {
+            .when('/Home/Menu', {
                 templateUrl: PARTIALS_PREFIX + 'menu/menu.html',
                 controller: 'MenuController',
                 controllerAs: CONTROLLER_AS_VIEW_MODEL

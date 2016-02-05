@@ -3,15 +3,16 @@
 
     function navDirective() {
 
-        var clickedLink = function clickedLink($scope, $element, $attrs) {
+        function clickedLink($scope, $element, $attrs) {
 
             $element.on('click', 'a', function () {
-                var name;
-
-                if ($(this).attr("id") === 'logo') {
-                    name = $('#myCuisine-navbar-collapse').children("ul").children().first().attr('name');
+                var name,
+                    location = $(this).attr('href').slice(2).split('/');
+                
+                if (location.length > 1) {
+                    name = location[1];
                 } else {
-                    name = $(this).parent().attr('name');
+                    name = 'Home';
                 }
 
                 $('#myCuisine-navbar-collapse li[name=' + name + ']').parent().children('.active').removeClass('active');

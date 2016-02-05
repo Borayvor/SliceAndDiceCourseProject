@@ -13,10 +13,10 @@
 </head>
 
 <body ng-app="MyCuisine" ng-cloak>
-    <div id="wrapper">
+    <div id="wrapper" nav-directive>
         <div id="nav-after">&nbsp;</div>
         <header id="myCuisine-header">
-            <nav class="container nav navbar-default" nav-directive>
+            <nav class="container nav navbar-default" >
                 <div>
                     <div class="navbar-header">
                         <button type="button" class="navbar-brand navbar-toggle collapsed" data-toggle="collapse" data-target="#myCuisine-navbar-collapse" aria-expanded="false">
@@ -33,9 +33,9 @@
                     <div id="myCuisine-navbar-collapse" class="collapse navbar-collapse pull-right">
                         <ul class="nav navbar-nav">
                             <li name="Home" class="active"><a href="#/">Home</a></li>
-                            <li name="Location"><a href="#/Location">Location</a></li>
-                            <li name="Menu"><a href="#/Menu">Menu</a></li>
-                            <li name="Blog"><a href="#/Blog">Blog</a></li>
+                            <li name="Location"><a href="#/Home/Location">Location</a></li>
+                            <li name="Menu"><a href="#/Home/Menu">Menu</a></li>
+                            <li name="Blog"><a href="#/Home/Blog">Blog</a></li>
                             <li name="ContactUs"><a href="#/ContactUs">Contact Us</a></li>
                         </ul>
                     </div>
@@ -49,14 +49,14 @@
         <!-- ==================================================== -->
 
         <footer id="myCuisine-footer" class="nav navbar-default text-center">
-            <nav class="container" nav-directive>
+            <nav class="container" >
                 <div>
                     <img src="./app/images/FooterDecoration.png" class="center-block" />
                     <ul class="nav navbar-nav">
                         <li name="Home" class="active"><a href="#/">Home</a></li>
-                        <li name="Location"><a href="#/Location">Location</a></li>
-                        <li name="Menu"><a href="#/Menu">Menu</a></li>
-                        <li name="Blog"><a href="#/Blog">Blog</a></li>
+                        <li name="Location"><a href="#/Home/Location">Location</a></li>
+                        <li name="Menu"><a href="#/Home/Menu">Menu</a></li>
+                        <li name="Blog"><a href="#/Home/Blog">Blog</a></li>
                         <li name="ContactUs"><a href="#/ContactUs">Contact Us</a></li>
                     </ul>
                     <div id="copiright">Designed by <a href="#">Elegant WordPress Themes</a> | Powered by <a href="#">Bootstrap</a></div>
