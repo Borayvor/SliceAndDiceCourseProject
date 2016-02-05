@@ -25,6 +25,13 @@
     font-style: normal;
 }
 
+@mixin clear_h_tags_margin_padding () {
+    h1, h2, h3, h4, h5, h6 {
+        margin: 0;
+        padding: 0;
+    }
+}
+
 @mixin nav_links ($color_normal, $color_active) {
     li {
         text-transform: uppercase;
@@ -317,6 +324,14 @@ html {
         }
 
         #myCuisineCarousel {
+            #carousel-indicators {
+                bottom: 0;
+            }
+
+            img {
+                width: 100%;
+            }
+
             .carousel-inner {
                 .container {
                     .carousel-caption {
@@ -330,17 +345,6 @@ html {
                     }
                 }
             }
-        }
-    }
-
-    #myCuisineCarousel {
-
-        #carousel-indicators {
-            bottom: 0;
-        }
-
-        img {
-            width: 100%;
         }
     }
 
@@ -413,7 +417,10 @@ html {
             .content-items {
                 font-style: italic;
                 color: #92907c;
-                margin-bottom: 30px;
+
+                & > div {
+                    margin-bottom: 60px;
+                }
 
                 .title {
                     @include font_normal_LeagueGothic_Regular();
@@ -431,14 +438,11 @@ html {
                     padding-right: 15px;
                     padding-left: 15px;
 
-                    h1, h2, h3, h4, h5, h6 {
-                        margin: 0;
-                        padding: 0;
-                    }
+                    @include clear_h_tags_margin_padding ();
 
                     .recommendation-body {
                         padding: 0;
-                        margin-bottom: 10px;
+                        padding-bottom: 10px;
                     }
                 }
 
@@ -455,9 +459,6 @@ html {
                             color: #716851;
                         }
                     }
-                }
-
-                #recommendations {
                 }
 
                 #location-home {
@@ -488,10 +489,7 @@ html {
                     .testimonial {
                         box-shadow: $testimonial_box_shadow;
 
-                        h1, h2, h3, h4, h5, h6 {
-                            margin: 0;
-                            padding: 0;
-                        }
+                        @include clear_h_tags_margin_padding ();
                     }
                 }
             }
