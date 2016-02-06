@@ -9,14 +9,20 @@
 
             $element.on('click', 'a', function () {
                 var name,
-                    location = $(this).attr('href').slice(2).split('/');
+                    location = $(this).attr('href');
+
+                if(location[0] !== '#'){
+                    return;
+                }
+
+                location = location.slice(2).split('/');
                 
                 if (location.length > 1) {
                     name = location[1];
                 } else {
                     name = 'Home';
                 }
-
+                                
                 $('#myCuisine-navbar-collapse li[name=' + name + ']').parent().children('.active').removeClass('active');
                 $('#myCuisine-footer nav li[name=' + name + ']').parent().children('.active').removeClass('active');
 
