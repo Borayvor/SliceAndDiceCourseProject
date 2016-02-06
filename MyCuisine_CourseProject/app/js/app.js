@@ -23,7 +23,7 @@
                 controllerAs: CONTROLLER_AS_VIEW_MODEL
             })
             .when('/Home/NotFound', {
-                templateUrl: PARTIALS_PREFIX + 'errorPage/errorPage.html'                
+                templateUrl: PARTIALS_PREFIX + 'errorPage/notFound.html'
             })
             .otherwise({ redirectTo: '/Home/NotFound' });
 

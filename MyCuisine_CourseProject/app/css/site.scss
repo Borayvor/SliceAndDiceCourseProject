@@ -78,6 +78,8 @@ $content_items_dark_color: #442917;
 
 $nav_bottom_button_color_active: #a29d79;
 
+$footer_background_color: #f2f1e8;
+
 $text_shadow_white: 1px 1px 1px #fff;
 $text_shadow_black: 1px 1px 1px rgba(0, 0, 0, 0.6), 0 0 1em black, 0 0 0.2em black;
 $testimonial_box_shadow: 1px 1px 1px rgba(81, 51, 27, 0.6), 0 0 1em #51331b, 0 0 0.2em #51331b;
@@ -189,9 +191,13 @@ html {
     overflow-y: scroll;
 }
 
+body {
+    background-color: $footer_background_color;
+}
+
 #wrapper {
     margin: 0;
-    padding: 0;    
+    padding: 0;
     font-family: Georgia, serif;
     font-size: 12px;
     color: #716851;
@@ -453,11 +459,15 @@ html {
                     }
                 }
 
-                #map {
-                    height: 400px;
-                }
-
                 #location-page-content {
+
+                    .thumbnail {                       
+
+                        #map {
+                            height: 400px;
+                        }
+                    }
+
                     p {
                         color: $content_items_dark_color;
                         font-size: 1.3em;
@@ -511,7 +521,7 @@ html {
 
     #myCuisine-footer {
         padding-top: 35px;
-        background-color: #f2f1e8;
+        background-color: $footer_background_color;
 
         nav {
             #copiright {
