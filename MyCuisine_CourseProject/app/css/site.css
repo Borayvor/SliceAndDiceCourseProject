@@ -163,10 +163,12 @@ body {
       bottom: -5px; }
     #wrapper .contentMain-header #myCuisineCarousel img {
       width: 100%; }
-    #wrapper .contentMain-header #myCuisineCarousel .carousel-inner .container .carousel-caption .header-title {
-      padding: 0; }
-    #wrapper .contentMain-header #myCuisineCarousel .carousel-inner .container .carousel-caption .header-body {
-      padding: 0; }
+    #wrapper .contentMain-header #myCuisineCarousel .carousel-inner .container .carousel-caption {
+      padding-bottom: 10px !important; }
+      #wrapper .contentMain-header #myCuisineCarousel .carousel-inner .container .carousel-caption .header-title {
+        padding: 0; }
+      #wrapper .contentMain-header #myCuisineCarousel .carousel-inner .container .carousel-caption .header-body {
+        padding: 0; }
   #wrapper #contentMain-content-area {
     background-color: #eeebd0;
     border-bottom: 1px solid #716851; }
