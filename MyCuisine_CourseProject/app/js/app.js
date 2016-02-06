@@ -22,7 +22,10 @@
                 controller: 'MenuController',
                 controllerAs: CONTROLLER_AS_VIEW_MODEL
             })
-            .otherwise({ redirectTo: '/' });
+            .when('/Home/NotFound', {
+                templateUrl: PARTIALS_PREFIX + 'errorPage/errorPage.html'                
+            })
+            .otherwise({ redirectTo: '/Home/NotFound' });
 
     }
 

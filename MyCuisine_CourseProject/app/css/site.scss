@@ -191,13 +191,18 @@ html {
 
 #wrapper {
     margin: 0;
-    padding: 0;
-    line-height: 18px;
+    padding: 0;    
     font-family: Georgia, serif;
     font-size: 12px;
     color: #716851;
     background-color: #f2f1e8;
     text-shadow: $text_shadow_white;
+
+    .error-page {
+        padding: 20px;
+        font-style: normal;
+        font-size: 3em;
+    }
 
     .browse-content-btn {
         color: #fff;
@@ -326,7 +331,7 @@ html {
         #myCuisineCarousel {
 
             .carousel-indicators {
-                bottom: -5px;  
+                bottom: -5px;
             }
 
 
@@ -448,7 +453,7 @@ html {
                     }
                 }
 
-                #map {                    
+                #map {
                     height: 400px;
                 }
 

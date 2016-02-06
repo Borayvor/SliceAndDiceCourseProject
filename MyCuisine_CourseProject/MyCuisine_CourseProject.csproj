@@ -101,6 +101,7 @@
     <Content Include="app\js\menu\menu-category-service.js" />
     <Content Include="app\js\menu\menu-controller.js" />
     <Content Include="app\js\menu\menu-service.js" />
+    <Content Include="app\views\partials\errorPage\errorPage.html" />
     <Content Include="app\views\partials\location\location.html" />
     <Content Include="app\views\partials\menu\menu.html" />
     <Content Include="bower_components\angular-bootstrap\index.js" />
