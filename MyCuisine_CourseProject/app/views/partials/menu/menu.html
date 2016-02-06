@@ -1,9 +1,11 @@
 ﻿<div class="contentMain-header">
     <div class="container">
-        <h1 class="header-title">{{vm.headerTitle}}</h1>
-        <p class="header-body">
-            {{vm.headerBody}}
-        </p>
+        <div>
+            <h1 class="header-title">{{vm.headerTitle}}</h1>
+            <p class="header-body">
+                {{vm.headerBody}}
+            </p>
+        </div>
     </div>
 </div>
 
@@ -13,7 +15,7 @@
     <div id="breadcrumbs">
         <div class="container">
             <ol class="breadcrumb pull-left">
-                <li ng-repeat="item in vm.location"><a href="#/">{{item}}</a></li>                
+                <li ng-repeat="item in vm.location"><a href="#/">{{item}}</a></li>
                 <li class="active">{{vm.currentLocation}}</li>
             </ol>
         </div>
@@ -37,8 +39,8 @@
                         <p>{{menuItem.description}}</p>
                     </div>
                 </div>
-            </div>                  
+            </div>
 
-        </div><!-- end .content-items -->  
+        </div><!-- end .content-items -->
     </div>
 </div><!-- end content-area -->
