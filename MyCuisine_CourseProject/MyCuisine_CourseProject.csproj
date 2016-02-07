@@ -73,26 +73,11 @@
     <Content Include="app\css\site.min.css">
       <DependentUpon>site.css</DependentUpon>
     </Content>
-    <Content Include="app\images\a-1.jpg" />
-    <Content Include="app\images\a-2.jpg" />
-    <Content Include="app\images\a-3.jpg" />
-    <Content Include="app\images\a-4.jpg" />
     <Content Include="app\images\carouserl\slide-1.jpg" />
     <Content Include="app\images\carouserl\slide-2.jpg" />
     <Content Include="app\images\carouserl\slide-3.jpg" />
     <Content Include="app\images\FooterDecoration.png" />
-    <Content Include="app\images\thumb-1.jpg" />
-    <Content Include="app\images\thumb-10.jpg" />
-    <Content Include="app\images\thumb-11.jpg" />
-    <Content Include="app\images\thumb-12.jpg" />
-    <Content Include="app\images\thumb-2.jpg" />
-    <Content Include="app\images\thumb-3.jpg" />
-    <Content Include="app\images\thumb-4.jpg" />
-    <Content Include="app\images\thumb-5.jpg" />
-    <Content Include="app\images\thumb-6.jpg" />
-    <Content Include="app\images\thumb-7.jpg" />
-    <Content Include="app\images\thumb-8.jpg" />
-    <Content Include="app\images\thumb-9.jpg" />
+    <Content Include="app\images\LogoFooter.png" />
     <Content Include="app\js\directives\nav-directive.js" />
     <Content Include="app\js\home\carousel-service.js" />
     <Content Include="app\js\home\testimonials-service.js" />

@@ -3,7 +3,7 @@
 
     function menuController($location, menuService, menuCategoryService) {
         var vm = this;
-                
+       
         vm.menuItems = {};
         vm.menuCategory = {};
         vm.location = $location.path().slice(1).split('/');

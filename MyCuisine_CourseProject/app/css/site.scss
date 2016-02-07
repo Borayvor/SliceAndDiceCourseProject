@@ -337,220 +337,252 @@ body {
         }
     }
 
-    .contentMain-header {
-        @include linear-gradient($carousel_color_start, $carousel_color_middle, $carousel_color_end, $carousel_pos_start, $carousel_pos_middle, $carousel_pos_end);
-        color: #fff;
+    #contentMain {
 
-        .container {
-
-            .header-title {
-                padding-top: 160px;
-                font-family: LeagueGothic-Regular, serif;
-                text-transform: uppercase;
-                font-size: 4em;
-                text-shadow: $text_shadow_black;
-            }
-
-            .header-body {
-                padding-bottom: 30px;
-                font-family: Helvetica, Arial, serif;
-                font-weight: bold;
-                font-size: 1.2em;
-                text-shadow: $text_shadow_black;
-            }
+        .title {
+            @include font_normal_LeagueGothic_Regular();
+            color: #c7c399;
+            text-transform: uppercase;
         }
 
-        #myCuisineCarousel {
-            & > div {
-                min-height: 386px;
-            }
-
-            .carousel-indicators {
-                bottom: -5px;
-            }
-
-            img {
-                width: 100%;
-            }
-
-            .carousel-inner {
-                .container {
-                    .carousel-caption {
-                        padding-bottom: 10px !important;
-
-                        .header-title {
-                            padding: 0;
-                        }
-
-                        .header-body {
-                            padding: 0;
-                        }
-                    }
-                }
-            }
-        }
-    }
-
-    #contentMain-content-area {
-        background-color: #eeebd0;
-        border-bottom: $content_border_bottom;
-
-        #breadcrumbs {
-            min-height: $breadcrumb_height;
-            background-color: #fbfbf8;
-            border-bottom: $content_border_bottom;
-            margin-bottom: 57px;
+        .contentMain-header {
+            @include linear-gradient($carousel_color_start, $carousel_color_middle, $carousel_color_end, $carousel_pos_start, $carousel_pos_middle, $carousel_pos_end);
+            color: #fff;
 
             .container {
-                .breadcrumb {
+
+                .header-title {
+                    padding-top: 160px;
+                    font-family: LeagueGothic-Regular, serif;
+                    text-transform: uppercase;
+                    font-size: 4em;
+                    text-shadow: $text_shadow_black;
+                }
+
+                .header-body {
+                    padding-bottom: 30px;
+                    font-family: Helvetica, Arial, serif;
+                    font-weight: bold;
                     font-size: 1.2em;
-                    margin: 0;
-                    padding: ($breadcrumb_height / 3) 15px ($breadcrumb_height / 3) 0;
-                    list-style: none;
-                    background-color: transparent;
-                    border: none;
-                    text-transform: uppercase;
-                    vertical-align: baseline;
+                    text-shadow: $text_shadow_black;
+                }
+            }
 
-                    a {
-                        color: $nav_bottom_button_color_active;
-                    }
+            #myCuisineCarousel {
+                & > div {
+                    min-height: 386px;
                 }
 
-                .breadcrumb > li + li:before {
-                    a {
-                        color: $nav_bottom_button_color_active;
-                    }
+                .carousel-indicators {
+                    bottom: -5px;
                 }
 
-                .breadcrumb > .active {
-                    color: $content_items_dark_color;
+                img {
+                    width: 100%;
+                }
+
+                .carousel-inner {
+                    .container {
+                        .carousel-caption {
+                            padding-bottom: 10px !important;
+
+                            .header-title {
+                                padding: 0;
+                            }
+
+                            .header-body {
+                                padding: 0;
+                            }
+                        }
+                    }
                 }
             }
         }
 
-        #slogan {
-            min-height: 132px;
-            background-color: #fbfbf8;
-            margin-bottom: 57px;
+        .contentMain-content-area {
+            background-color: #eeebd0;
             border-bottom: $content_border_bottom;
 
-            .container {
-                text-align: center;
-                padding-top: 10px;
-                padding-bottom: 17px;
-                color: #b4a48d;
-                font-family: 'goudy_bookletter_1911', Georgia, serif;
-                text-shadow: $text_shadow_white;
-                font-style: normal;
+            #breadcrumbs {
+                min-height: $breadcrumb_height;
+                background-color: #fbfbf8;
+                border-bottom: $content_border_bottom;
+                margin-bottom: 57px;
 
-                .slogan-header {
-                    color: #654e2d;
-                }
+                .container {
+                    .breadcrumb {
+                        font-size: 1.2em;
+                        margin: 0;
+                        padding: ($breadcrumb_height / 3) 15px ($breadcrumb_height / 3) 0;
+                        list-style: none;
+                        background-color: transparent;
+                        border: none;
+                        text-transform: uppercase;
+                        vertical-align: baseline;
 
-                .slogan-body {
-                    text-transform: uppercase;
+                        a {
+                            color: $nav_bottom_button_color_active;
+                        }
+                    }
+
+                    .breadcrumb > li + li:before {
+                        a {
+                            color: $nav_bottom_button_color_active;
+                        }
+                    }
+
+                    .breadcrumb > .active {
+                        color: $content_items_dark_color;
+                    }
                 }
             }
-        }
 
-        #content-area-container {
-            text-align: left;
+            #slogan {
+                min-height: 132px;
+                background-color: #fbfbf8;
+                margin-bottom: 57px;
+                border-bottom: $content_border_bottom;
 
-            .content-items {
-                font-style: italic;
-                color: #92907c;
+                .container {
+                    text-align: center;
+                    padding-top: 10px;
+                    padding-bottom: 17px;
+                    color: #b4a48d;
+                    font-family: 'goudy_bookletter_1911', Georgia, serif;
+                    text-shadow: $text_shadow_white;
+                    font-style: normal;
 
-                & > div {
-                    margin-bottom: 60px;
-                }
-
-                .title {
-                    @include font_normal_LeagueGothic_Regular();
-                    color: #c7c399;
-                    text-transform: uppercase;
-                }
-
-                a {
-                    @include font_normal_LeagueGothic_Regular();
-                    color: $content_items_dark_color;
-                    letter-spacing: -1px;
-                }
-
-                .recommendation {
-                    padding-right: 15px;
-                    padding-left: 15px;
-
-                    @include clear_h_tags_margin_padding ();
-
-                    .recommendation-body {
-                        padding: 0;
-                        padding-bottom: 10px;
-                    }
-                }
-
-                #location-page-content {
-
-                    .thumbnail {
-
-                        #map {
-                            height: 400px;
-                        }
+                    .slogan-header {
+                        color: #654e2d;
                     }
 
-                    p {
+                    .slogan-body {
+                        text-transform: uppercase;
+                    }
+                }
+            }
+
+            .content-area-container {
+                text-align: left;
+
+                .content-items {
+                    font-style: italic;
+                    color: #92907c;
+
+                    & > div {
+                        margin-bottom: 60px;
+                    }
+
+
+
+                    a {
+                        @include font_normal_LeagueGothic_Regular();
                         color: $content_items_dark_color;
-                        font-size: 1.3em;
-
-                        span {
-                            color: #716851;
-                        }
+                        letter-spacing: -1px;
                     }
-                }
 
-                #location-home {
-
-                    .row {
+                    .recommendation {
                         padding-right: 15px;
                         padding-left: 15px;
+
+                        @include clear_h_tags_margin_padding ();
+
+                        .recommendation-body {
+                            padding: 0;
+                            padding-bottom: 10px;
+                        }
                     }
 
-                    #map {
-                        height: 150px;
-                    }
+                    #location-page-content {
 
-                    .work-time {
-                        padding: 0;
+                        .thumbnail {
 
-                        .day {
-                            font-size: 1.5em;
+                            #map {
+                                height: 400px;
+                            }
                         }
 
-                        .clock {
+                        p {
                             color: $content_items_dark_color;
+                            font-size: 1.3em;
+
+                            span {
+                                color: #716851;
+                            }
+                        }
+                    }
+
+                    #location-home {
+
+                        .row {
+                            padding-right: 15px;
+                            padding-left: 15px;
+                        }
+
+                        #map {
+                            height: 150px;
+                        }
+
+                        .work-time {
+                            padding: 0;
+
+                            .day {
+                                font-size: 1.5em;
+                            }
+
+                            .clock {
+                                color: $content_items_dark_color;
+                            }
+                        }
+                    }
+
+                    #testimonials {
+                        .testimonial {
+                            box-shadow: $testimonial_box_shadow;
+
+                            @include clear_h_tags_margin_padding ();
                         }
                     }
                 }
+            }
 
-                #testimonials {
-                    .testimonial {
-                        box-shadow: $testimonial_box_shadow;
-
-                        @include clear_h_tags_margin_padding ();
-                    }
+            #btn-browse-menu {
+                .browse-content-btn {
+                    background-color: #a9a57e;
                 }
             }
         }
 
-        #btn-browse-menu {
-            .browse-content-btn {
-                background-color: #a9a57e;
+        .content-footer {
+            padding-top: 35px;
+            background-color: $footer_background_color;
+
+            .container {
+                .row {
+                    line-height: 24px;
+                    color: $content_items_dark_color;
+                    padding-bottom: 15px;
+                    border-bottom: 1px solid #d5cf9d;
+
+                    div {
+                        padding-right: 15px;
+
+                        ul {
+                            margin: 0;
+                            padding-left: 10px;
+
+                            a { 
+                                color: $content_items_dark_color;
+                            }
+                        }
+                    }
+                }
             }
         }
     }
 
     #myCuisine-footer {
-        padding-top: 35px;
+        padding-top: 15px;
         background-color: $footer_background_color;
 
         nav {

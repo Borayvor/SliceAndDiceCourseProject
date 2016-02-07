@@ -32,7 +32,7 @@
 </div>
 <!-- ==================================================== -->
 
-<div id="contentMain-content-area" ng-cloak>
+<div class="contentMain-content-area">
     <div id="slogan">
         <div class="container">
             <h2 class="slogan-header">“Your awesome company slogan goes here, we have the best food around”</h2>
@@ -49,10 +49,10 @@
 
     <!-- sssssss -->
 
-    <div id="content-area-container" class="container">
+    <div class="content-area-container container" ng-cloak>
         <div class="content-items row">
 
-            <div id="recommendations" ng-cloak class="col-xs-12 col-sm-6 col-md-4">
+            <div id="recommendations" ng-cloak class="col-xs-12 col-sm-4">
                 <h3 class="title">Chef's Recommendations</h3>
                 <div class="recommendation row" ng-show="menuItem.recommendation" ng-repeat="menuItem in vm.menuItems">
                     <div class="thumb col-xs-12 col-sm-4">
@@ -68,7 +68,7 @@
             </div>
 
 
-            <div id="location-home" ng-cloak class="col-xs-12 col-sm-6 col-md-4">
+            <div id="location-home" ng-cloak class="col-xs-12 col-sm-4">
                 <h3 class="title">Location and hours of operation</h3>
                 <div class="row">
                     <div class="thumbnail col-xs-12 col-sm-10">
@@ -84,7 +84,7 @@
             </div>
 
 
-            <div id="testimonials" ng-cloak class="col-xs-12 col-sm-6 col-md-4">
+            <div id="testimonials" ng-cloak class="col-xs-12 col-sm-4">
                 <h3 class="title">Customer Testimonials</h3>
                 <div class="testimonial panel panel-default">
                     <div class="panel-body">
@@ -106,3 +106,9 @@
 
     </div>
 </div><!-- end content-area -->
+
+<div class="content-footer text-center">
+    <div class="container">
+        <img src="./app/images/FooterDecoration.png" class="center-block" />       
+    </div>    
+</div>

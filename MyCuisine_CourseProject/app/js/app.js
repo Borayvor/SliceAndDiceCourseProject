@@ -4,7 +4,7 @@
     function config($routeProvider) {
 
         var PARTIALS_PREFIX = 'app/views/partials/';
-        var CONTROLLER_AS_VIEW_MODEL = 'vm';
+        var CONTROLLER_AS_VIEW_MODEL = 'vm';        
 
         $routeProvider
             .when('/', {

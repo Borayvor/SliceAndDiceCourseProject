@@ -147,7 +147,12 @@ body {
         #wrapper #myCuisine-header nav #myCuisine-navbar-collapse li a {
           text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6), 0 0 1em black, 0 0 0.2em black;
           line-height: 36px; }
-  #wrapper .contentMain-header {
+  #wrapper #contentMain .title {
+    font-family: "LeagueGothic-Regular", serif;
+    font-style: normal;
+    color: #c7c399;
+    text-transform: uppercase; }
+  #wrapper #contentMain .contentMain-header {
     background: #866f45;
     /* Old browsers */
     background: -moz-radial-gradient(bottom, ellipse cover, #866f45 0, #51331b 35%, #452917 100%);
@@ -157,39 +162,39 @@ body {
     background: -radial-gradient(ellipse at bottom, #866f45 0, #51331b 35%, #452917 100%);
     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     color: #fff; }
-    #wrapper .contentMain-header .container .header-title {
+    #wrapper #contentMain .contentMain-header .container .header-title {
       padding-top: 160px;
       font-family: LeagueGothic-Regular, serif;
       text-transform: uppercase;
       font-size: 4em;
       text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6), 0 0 1em black, 0 0 0.2em black; }
-    #wrapper .contentMain-header .container .header-body {
+    #wrapper #contentMain .contentMain-header .container .header-body {
       padding-bottom: 30px;
       font-family: Helvetica, Arial, serif;
       font-weight: bold;
       font-size: 1.2em;
       text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6), 0 0 1em black, 0 0 0.2em black; }
-    #wrapper .contentMain-header #myCuisineCarousel > div {
+    #wrapper #contentMain .contentMain-header #myCuisineCarousel > div {
       min-height: 386px; }
-    #wrapper .contentMain-header #myCuisineCarousel .carousel-indicators {
+    #wrapper #contentMain .contentMain-header #myCuisineCarousel .carousel-indicators {
       bottom: -5px; }
-    #wrapper .contentMain-header #myCuisineCarousel img {
+    #wrapper #contentMain .contentMain-header #myCuisineCarousel img {
       width: 100%; }
-    #wrapper .contentMain-header #myCuisineCarousel .carousel-inner .container .carousel-caption {
+    #wrapper #contentMain .contentMain-header #myCuisineCarousel .carousel-inner .container .carousel-caption {
       padding-bottom: 10px !important; }
-      #wrapper .contentMain-header #myCuisineCarousel .carousel-inner .container .carousel-caption .header-title {
+      #wrapper #contentMain .contentMain-header #myCuisineCarousel .carousel-inner .container .carousel-caption .header-title {
         padding: 0; }
-      #wrapper .contentMain-header #myCuisineCarousel .carousel-inner .container .carousel-caption .header-body {
+      #wrapper #contentMain .contentMain-header #myCuisineCarousel .carousel-inner .container .carousel-caption .header-body {
         padding: 0; }
-  #wrapper #contentMain-content-area {
+  #wrapper #contentMain .contentMain-content-area {
     background-color: #eeebd0;
     border-bottom: 1px solid #716851; }
-    #wrapper #contentMain-content-area #breadcrumbs {
+    #wrapper #contentMain .contentMain-content-area #breadcrumbs {
       min-height: 72px;
       background-color: #fbfbf8;
       border-bottom: 1px solid #716851;
       margin-bottom: 57px; }
-      #wrapper #contentMain-content-area #breadcrumbs .container .breadcrumb {
+      #wrapper #contentMain .contentMain-content-area #breadcrumbs .container .breadcrumb {
         font-size: 1.2em;
         margin: 0;
         padding: 24px 15px 24px 0;
@@ -198,18 +203,18 @@ body {
         border: none;
         text-transform: uppercase;
         vertical-align: baseline; }
-        #wrapper #contentMain-content-area #breadcrumbs .container .breadcrumb a {
+        #wrapper #contentMain .contentMain-content-area #breadcrumbs .container .breadcrumb a {
           color: #a29d79; }
-      #wrapper #contentMain-content-area #breadcrumbs .container .breadcrumb > li + li:before a {
+      #wrapper #contentMain .contentMain-content-area #breadcrumbs .container .breadcrumb > li + li:before a {
         color: #a29d79; }
-      #wrapper #contentMain-content-area #breadcrumbs .container .breadcrumb > .active {
+      #wrapper #contentMain .contentMain-content-area #breadcrumbs .container .breadcrumb > .active {
         color: #442917; }
-    #wrapper #contentMain-content-area #slogan {
+    #wrapper #contentMain .contentMain-content-area #slogan {
       min-height: 132px;
       background-color: #fbfbf8;
       margin-bottom: 57px;
       border-bottom: 1px solid #716851; }
-      #wrapper #contentMain-content-area #slogan .container {
+      #wrapper #contentMain .contentMain-content-area #slogan .container {
         text-align: center;
         padding-top: 10px;
         padding-bottom: 17px;
@@ -217,63 +222,73 @@ body {
         font-family: 'goudy_bookletter_1911', Georgia, serif;
         text-shadow: 1px 1px 1px #fff;
         font-style: normal; }
-        #wrapper #contentMain-content-area #slogan .container .slogan-header {
+        #wrapper #contentMain .contentMain-content-area #slogan .container .slogan-header {
           color: #654e2d; }
-        #wrapper #contentMain-content-area #slogan .container .slogan-body {
+        #wrapper #contentMain .contentMain-content-area #slogan .container .slogan-body {
           text-transform: uppercase; }
-    #wrapper #contentMain-content-area #content-area-container {
+    #wrapper #contentMain .contentMain-content-area .content-area-container {
       text-align: left; }
-      #wrapper #contentMain-content-area #content-area-container .content-items {
+      #wrapper #contentMain .contentMain-content-area .content-area-container .content-items {
         font-style: italic;
         color: #92907c; }
-        #wrapper #contentMain-content-area #content-area-container .content-items > div {
+        #wrapper #contentMain .contentMain-content-area .content-area-container .content-items > div {
           margin-bottom: 60px; }
-        #wrapper #contentMain-content-area #content-area-container .content-items .title {
-          font-family: "LeagueGothic-Regular", serif;
-          font-style: normal;
-          color: #c7c399;
-          text-transform: uppercase; }
-        #wrapper #contentMain-content-area #content-area-container .content-items a {
+        #wrapper #contentMain .contentMain-content-area .content-area-container .content-items a {
           font-family: "LeagueGothic-Regular", serif;
           font-style: normal;
           color: #442917;
           letter-spacing: -1px; }
-        #wrapper #contentMain-content-area #content-area-container .content-items .recommendation {
+        #wrapper #contentMain .contentMain-content-area .content-area-container .content-items .recommendation {
           padding-right: 15px;
           padding-left: 15px; }
-          #wrapper #contentMain-content-area #content-area-container .content-items .recommendation h1, #wrapper #contentMain-content-area #content-area-container .content-items .recommendation h2, #wrapper #contentMain-content-area #content-area-container .content-items .recommendation h3, #wrapper #contentMain-content-area #content-area-container .content-items .recommendation h4, #wrapper #contentMain-content-area #content-area-container .content-items .recommendation h5, #wrapper #contentMain-content-area #content-area-container .content-items .recommendation h6 {
+          #wrapper #contentMain .contentMain-content-area .content-area-container .content-items .recommendation h1, #wrapper #contentMain .contentMain-content-area .content-area-container .content-items .recommendation h2, #wrapper #contentMain .contentMain-content-area .content-area-container .content-items .recommendation h3, #wrapper #contentMain .contentMain-content-area .content-area-container .content-items .recommendation h4, #wrapper #contentMain .contentMain-content-area .content-area-container .content-items .recommendation h5, #wrapper #contentMain .contentMain-content-area .content-area-container .content-items .recommendation h6 {
             margin: 0;
             padding: 0; }
-          #wrapper #contentMain-content-area #content-area-container .content-items .recommendation .recommendation-body {
+          #wrapper #contentMain .contentMain-content-area .content-area-container .content-items .recommendation .recommendation-body {
             padding: 0;
             padding-bottom: 10px; }
-        #wrapper #contentMain-content-area #content-area-container .content-items #location-page-content .thumbnail #map {
+        #wrapper #contentMain .contentMain-content-area .content-area-container .content-items #location-page-content .thumbnail #map {
           height: 400px; }
-        #wrapper #contentMain-content-area #content-area-container .content-items #location-page-content p {
+        #wrapper #contentMain .contentMain-content-area .content-area-container .content-items #location-page-content p {
           color: #442917;
           font-size: 1.3em; }
-          #wrapper #contentMain-content-area #content-area-container .content-items #location-page-content p span {
+          #wrapper #contentMain .contentMain-content-area .content-area-container .content-items #location-page-content p span {
             color: #716851; }
-        #wrapper #contentMain-content-area #content-area-container .content-items #location-home .row {
+        #wrapper #contentMain .contentMain-content-area .content-area-container .content-items #location-home .row {
           padding-right: 15px;
           padding-left: 15px; }
-        #wrapper #contentMain-content-area #content-area-container .content-items #location-home #map {
+        #wrapper #contentMain .contentMain-content-area .content-area-container .content-items #location-home #map {
           height: 150px; }
-        #wrapper #contentMain-content-area #content-area-container .content-items #location-home .work-time {
+        #wrapper #contentMain .contentMain-content-area .content-area-container .content-items #location-home .work-time {
           padding: 0; }
-          #wrapper #contentMain-content-area #content-area-container .content-items #location-home .work-time .day {
+          #wrapper #contentMain .contentMain-content-area .content-area-container .content-items #location-home .work-time .day {
             font-size: 1.5em; }
-          #wrapper #contentMain-content-area #content-area-container .content-items #location-home .work-time .clock {
+          #wrapper #contentMain .contentMain-content-area .content-area-container .content-items #location-home .work-time .clock {
             color: #442917; }
-        #wrapper #contentMain-content-area #content-area-container .content-items #testimonials .testimonial {
+        #wrapper #contentMain .contentMain-content-area .content-area-container .content-items #testimonials .testimonial {
           box-shadow: 1px 1px 1px rgba(81, 51, 27, 0.6), 0 0 1em #51331b, 0 0 0.2em #51331b; }
-          #wrapper #contentMain-content-area #content-area-container .content-items #testimonials .testimonial h1, #wrapper #contentMain-content-area #content-area-container .content-items #testimonials .testimonial h2, #wrapper #contentMain-content-area #content-area-container .content-items #testimonials .testimonial h3, #wrapper #contentMain-content-area #content-area-container .content-items #testimonials .testimonial h4, #wrapper #contentMain-content-area #content-area-container .content-items #testimonials .testimonial h5, #wrapper #contentMain-content-area #content-area-container .content-items #testimonials .testimonial h6 {
+          #wrapper #contentMain .contentMain-content-area .content-area-container .content-items #testimonials .testimonial h1, #wrapper #contentMain .contentMain-content-area .content-area-container .content-items #testimonials .testimonial h2, #wrapper #contentMain .contentMain-content-area .content-area-container .content-items #testimonials .testimonial h3, #wrapper #contentMain .contentMain-content-area .content-area-container .content-items #testimonials .testimonial h4, #wrapper #contentMain .contentMain-content-area .content-area-container .content-items #testimonials .testimonial h5, #wrapper #contentMain .contentMain-content-area .content-area-container .content-items #testimonials .testimonial h6 {
             margin: 0;
             padding: 0; }
-    #wrapper #contentMain-content-area #btn-browse-menu .browse-content-btn {
+    #wrapper #contentMain .contentMain-content-area #btn-browse-menu .browse-content-btn {
       background-color: #a9a57e; }
-  #wrapper #myCuisine-footer {
+  #wrapper #contentMain .content-footer {
     padding-top: 35px;
+    background-color: #f2f1e8; }
+    #wrapper #contentMain .content-footer .container .row {
+      line-height: 24px;
+      color: #442917;
+      padding-bottom: 15px;
+      border-bottom: 1px solid #d5cf9d; }
+      #wrapper #contentMain .content-footer .container .row div {
+        padding-right: 15px; }
+        #wrapper #contentMain .content-footer .container .row div ul {
+          margin: 0;
+          padding-left: 10px; }
+          #wrapper #contentMain .content-footer .container .row div ul a {
+            color: #442917; }
+  #wrapper #myCuisine-footer {
+    padding-top: 15px;
     background-color: #f2f1e8; }
     #wrapper #myCuisine-footer nav #copiright {
       color: #92907c;

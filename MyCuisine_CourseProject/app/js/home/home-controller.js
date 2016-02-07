@@ -3,7 +3,7 @@
        
     function homeController(carouselService, menuService, locationService, testimonialsService) {
         var vm = this;
-                
+       
         vm.carouselItems = {};
         vm.menuItems = {};
         vm.info = {};
