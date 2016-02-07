@@ -56,6 +56,13 @@
     }
 }
 
+@mixin slogan_breadcrumb($min-height, $border-bottom, $background-color, $margin-bottom) {
+    min-height: $min-height;    
+    border-bottom: $border-bottom;
+    background-color: $background-color;
+    margin-bottom: $margin-bottom;
+}
+
 $carousel_color_start: #866f45;
 $carousel_color_middle: #51331b;
 $carousel_color_end: #452917;
@@ -72,6 +79,9 @@ $nav_top_link_border_color: #8e8778;
 $nav_top_height: 67px;
 
 $breadcrumb_height: 72px;
+$slogan_height: 132px;
+$slogan_breadcrumb_background-color: #fbfbf8;
+$slogan_breadcrumb_margin-bottom: 57px;
 
 $content_border_bottom: 1px solid #716851;
 $content_items_dark_color: #442917;
@@ -403,11 +413,8 @@ body {
             background-color: #eeebd0;
             border-bottom: $content_border_bottom;
 
-            #breadcrumbs {
-                min-height: $breadcrumb_height;
-                background-color: #fbfbf8;
-                border-bottom: $content_border_bottom;
-                margin-bottom: 57px;
+            #breadcrumbs {   
+                @include slogan_breadcrumb($breadcrumb_height, $content_border_bottom, $slogan_breadcrumb_background-color, $slogan_breadcrumb_margin-bottom);
 
                 .container {
                     .breadcrumb {
@@ -424,7 +431,7 @@ body {
                             color: $nav_bottom_button_color_active;
                         }
                     }
-                    
+
                     .breadcrumb > li + li:before {
                         content: "\00BB ";
 
@@ -439,11 +446,8 @@ body {
                 }
             }
 
-            #slogan {
-                min-height: 132px;
-                background-color: #fbfbf8;
-                margin-bottom: 57px;
-                border-bottom: $content_border_bottom;
+            #slogan {                
+                @include slogan_breadcrumb($slogan_height, $content_border_bottom, $slogan_breadcrumb_background-color, $slogan_breadcrumb_margin-bottom);
 
                 .container {
                     text-align: center;
@@ -573,7 +577,7 @@ body {
                             margin: 0;
                             padding-left: 10px;
 
-                            a { 
+                            a {
                                 color: $content_items_dark_color;
                             }
                         }

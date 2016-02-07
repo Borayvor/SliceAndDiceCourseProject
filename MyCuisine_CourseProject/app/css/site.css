@@ -191,8 +191,8 @@ body {
     border-bottom: 1px solid #716851; }
     #wrapper #contentMain .contentMain-content-area #breadcrumbs {
       min-height: 72px;
-      background-color: #fbfbf8;
       border-bottom: 1px solid #716851;
+      background-color: #fbfbf8;
       margin-bottom: 57px; }
       #wrapper #contentMain .contentMain-content-area #breadcrumbs .container .breadcrumb {
         font-size: 1.2em;
@@ -213,9 +213,9 @@ body {
         color: #442917; }
     #wrapper #contentMain .contentMain-content-area #slogan {
       min-height: 132px;
+      border-bottom: 1px solid #716851;
       background-color: #fbfbf8;
-      margin-bottom: 57px;
-      border-bottom: 1px solid #716851; }
+      margin-bottom: 57px; }
       #wrapper #contentMain .contentMain-content-area #slogan .container {
         text-align: center;
         padding-top: 10px;
