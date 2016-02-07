@@ -140,12 +140,12 @@ $testimonial_box_shadow: 1px 1px 1px rgba(81, 51, 27, 0.6), 0 0 1em #51331b, 0 0
         #contentMain {
             .contentMain-header {
                 .header-title {
-                    padding-top: 30px;
+                    padding-top: 30px !important;
                 }
 
                 #myCuisineCarousel {
                     & > div {
-                        min-height: 120px;
+                        min-height: 120px !important;
                     }
 
                     .carousel-inner {
@@ -173,7 +173,7 @@ $testimonial_box_shadow: 1px 1px 1px rgba(81, 51, 27, 0.6), 0 0 1em #51331b, 0 0
             .contentMain-header {
                 #myCuisineCarousel {
                     & > div {
-                        min-height: 242px;
+                        min-height: 242px !important;
                     }
 
                     .carousel-inner {
@@ -201,7 +201,7 @@ $testimonial_box_shadow: 1px 1px 1px rgba(81, 51, 27, 0.6), 0 0 1em #51331b, 0 0
             .contentMain-header {
                 #myCuisineCarousel {
                     & > div {
-                        min-height: 317px;
+                        min-height: 317px !important;
                     }
 
                     .carousel-inner {

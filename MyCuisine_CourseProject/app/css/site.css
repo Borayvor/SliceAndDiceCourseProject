@@ -30,9 +30,9 @@
         text-align: center;
         border-bottom: 1px solid #a29d79; }
   #wrapper #contentMain .contentMain-header .header-title {
-    padding-top: 30px; }
+    padding-top: 30px !important; }
   #wrapper #contentMain .contentMain-header #myCuisineCarousel > div {
-    min-height: 120px; }
+    min-height: 120px !important; }
   #wrapper #contentMain .contentMain-header #myCuisineCarousel .carousel-inner .container .carousel-caption .header-title {
     display: none !important; }
   #wrapper #contentMain .contentMain-header #myCuisineCarousel .carousel-inner .container .carousel-caption .header-body {
@@ -40,7 +40,7 @@
 
 @media (min-width: 767px) and (max-width: 991px) {
   #wrapper #contentMain .contentMain-header #myCuisineCarousel > div {
-    min-height: 242px; }
+    min-height: 242px !important; }
   #wrapper #contentMain .contentMain-header #myCuisineCarousel .carousel-inner .container .carousel-caption .header-title {
     font-size: 3em !important; }
   #wrapper #contentMain .contentMain-header #myCuisineCarousel .carousel-inner .container .carousel-caption .header-body {
@@ -48,7 +48,7 @@
 
 @media (min-width: 991px) and (max-width: 1199px) {
   #wrapper #contentMain .contentMain-header #myCuisineCarousel > div {
-    min-height: 317px; }
+    min-height: 317px !important; }
   #wrapper #contentMain .contentMain-header #myCuisineCarousel .carousel-inner .container .carousel-caption .header-title {
     font-size: 3em !important; }
   #wrapper #contentMain .contentMain-header #myCuisineCarousel .carousel-inner .container .carousel-caption .header-body {
