@@ -205,8 +205,10 @@ body {
         vertical-align: baseline; }
         #wrapper #contentMain .contentMain-content-area #breadcrumbs .container .breadcrumb a {
           color: #a29d79; }
-      #wrapper #contentMain .contentMain-content-area #breadcrumbs .container .breadcrumb > li + li:before a {
-        color: #a29d79; }
+      #wrapper #contentMain .contentMain-content-area #breadcrumbs .container .breadcrumb > li + li:before {
+        content: "\00BB "; }
+        #wrapper #contentMain .contentMain-content-area #breadcrumbs .container .breadcrumb > li + li:before a {
+          color: #a29d79; }
       #wrapper #contentMain .contentMain-content-area #breadcrumbs .container .breadcrumb > .active {
         color: #442917; }
     #wrapper #contentMain .contentMain-content-area #slogan {

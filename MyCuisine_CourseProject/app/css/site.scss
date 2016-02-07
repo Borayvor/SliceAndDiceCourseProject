@@ -424,8 +424,10 @@ body {
                             color: $nav_bottom_button_color_active;
                         }
                     }
-
+                    
                     .breadcrumb > li + li:before {
+                        content: "\00BB ";
+
                         a {
                             color: $nav_bottom_button_color_active;
                         }
