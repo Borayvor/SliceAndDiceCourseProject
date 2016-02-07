@@ -78,9 +78,13 @@
     <Content Include="app\images\carouserl\slide-3.jpg" />
     <Content Include="app\images\FooterDecoration.png" />
     <Content Include="app\images\LogoFooter.png" />
+    <Content Include="app\js\directives\breadcrumbs-directive.js" />
     <Content Include="app\js\directives\footer-common-directive.js" />
     <Content Include="app\js\directives\footer-home-directive.js" />
+    <Content Include="app\js\directives\header-common-directive.js" />
+    <Content Include="app\js\directives\header-home-directive.js" />
     <Content Include="app\js\directives\nav-directive.js" />
+    <Content Include="app\js\directives\slogan-directive.js" />
     <Content Include="app\js\home\carousel-service.js" />
     <Content Include="app\js\home\testimonials-service.js" />
     <Content Include="app\js\location\location-controller.js" />
@@ -88,8 +92,12 @@
     <Content Include="app\js\menu\menu-category-service.js" />
     <Content Include="app\js\menu\menu-controller.js" />
     <Content Include="app\js\menu\menu-service.js" />
+    <Content Include="app\views\directives\breadcrumbs-directive.html" />
     <Content Include="app\views\directives\footer-common-directive.html" />
     <Content Include="app\views\directives\footer-home-directive.html" />
+    <Content Include="app\views\directives\header-common-directive.html" />
+    <Content Include="app\views\directives\header-home-directive.html" />
+    <Content Include="app\views\directives\slogan-directive.html" />
     <Content Include="app\views\partials\errorPage\notFound.html" />
     <Content Include="app\views\partials\location\location.html" />
     <Content Include="app\views\partials\menu\menu.html" />

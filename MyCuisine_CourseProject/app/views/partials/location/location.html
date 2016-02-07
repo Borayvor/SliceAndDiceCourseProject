@@ -1,26 +1,12 @@
-﻿<div class="contentMain-header">
-    <div class="container">
-        <div ng-cloak>
-            <h1 class="header-title">{{vm.headerTitle}}</h1>
-            <p class="header-body">
-                {{vm.headerBody}}
-            </p>
-        </div>
-    </div>
+﻿<div class="contentMain-header" header-common-directive>
+    
 </div>
 
 <!-- content -->
 
 <div class="contentMain-content-area">
-    <div>
-        <div id="breadcrumbs">
-            <div class="container">
-                <ol class="breadcrumb pull-left">
-                    <li ng-repeat="item in vm.location"><a href="#/">{{item}}</a></li>
-                    <li class="active">{{vm.currentLocation}}</li>
-                </ol>
-            </div>
-        </div>
+    <div breadcrumbs-directive>
+        
     </div>
 
     <!-- content-area -->

@@ -1,0 +1,30 @@
+﻿<div id="myCuisineCarousel" ng-cloak class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol id="carousel-indicators" class="carousel-indicators">
+        <li data-target="#myCuisineCarousel" ng-repeat="carouselItem in vm.carouselItems" ng-class="{active: (carouselItem.position === 0)}" data-slide-to="{{carouselItem.position}}"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+        <div ng-class="{item: true, active : (carouselItem.position === 0)}" ng-repeat="carouselItem in vm.carouselItems">
+            <img ng-src="{{carouselItem.image.url}}" alt="{{carouselItem.title}}">
+            <div class="container">
+                <div class="carousel-caption">
+                    <h1 class="header-title">{{carouselItem.title}}</h1>
+                    <p class="header-body">
+                        {{carouselItem.description}}
+                    </p>
+                    <a href="#/" class="btn browse-content-btn">Button’s Text Goes Right Here</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Controls -->
+    <a class="left carousel-control" href="#myCuisineCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+    </a>
+    <a class="right carousel-control" href="#myCuisineCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right"></span>
+    </a>
+</div><!-- end carousel -->
