@@ -84,6 +84,20 @@ $text_shadow_white: 1px 1px 1px #fff;
 $text_shadow_black: 1px 1px 1px rgba(0, 0, 0, 0.6), 0 0 1em black, 0 0 0.2em black;
 $testimonial_box_shadow: 1px 1px 1px rgba(81, 51, 27, 0.6), 0 0 1em #51331b, 0 0 0.2em #51331b;
 
+@media (max-width: 400px) {
+    #wrapper {
+        #contentMain {
+            .contentMain-header {
+                #myCuisineCarousel {
+                    & > div {
+                        min-height: 106px !important;
+                    }
+                }
+            }
+        }
+    }
+}
+
 @media (max-width: 767px) {
     #wrapper {
         #nav-after {
@@ -120,6 +134,10 @@ $testimonial_box_shadow: 1px 1px 1px rgba(81, 51, 27, 0.6), 0 0 1em #51331b, 0 0
                 }
 
                 #myCuisineCarousel {
+                    & > div {
+                        min-height: 132px;
+                    }
+
                     .carousel-inner {
                         .container {
                             .carousel-caption {
@@ -139,11 +157,15 @@ $testimonial_box_shadow: 1px 1px 1px rgba(81, 51, 27, 0.6), 0 0 1em #51331b, 0 0
     }
 }
 
-@media (max-width: 991px) {
+@media (min-width: 767px) and (max-width: 991px) {
     #wrapper {
         #contentMain {
             .contentMain-header {
                 #myCuisineCarousel {
+                    & > div {
+                        min-height: 254px;
+                    }
+
                     .carousel-inner {
                         .container {
                             .carousel-caption {
@@ -163,11 +185,15 @@ $testimonial_box_shadow: 1px 1px 1px rgba(81, 51, 27, 0.6), 0 0 1em #51331b, 0 0
     }
 }
 
-@media (max-width: 1199px) {
+@media (min-width: 991px) and (max-width: 1199px) {
     #wrapper {
         #contentMain {
             .contentMain-header {
                 #myCuisineCarousel {
+                    & > div {
+                        min-height: 329px;
+                    }
+
                     .carousel-inner {
                         .container {
                             .carousel-caption {
@@ -335,11 +361,13 @@ body {
         }
 
         #myCuisineCarousel {
+            & > div {
+                min-height: 398px;
+            }
 
             .carousel-indicators {
                 bottom: -5px;
             }
-
 
             img {
                 width: 100%;
@@ -463,7 +491,7 @@ body {
 
                 #location-page-content {
 
-                    .thumbnail {                       
+                    .thumbnail {
 
                         #map {
                             height: 400px;

@@ -1,6 +1,6 @@
 ﻿<div class="contentMain-header">
     <div class="container">
-        <div>
+        <div  ng-cloak>
             <h1 class="header-title">{{vm.headerTitle}}</h1>
             <p class="header-body">
                 {{vm.headerBody}}
@@ -25,7 +25,7 @@
 
     <div id="content-area-container" ng-cloak class="container">
         <div class="content-items row" >
-            <div id="location-page-content">
+            <div id="location-page-content" ng-cloak>
                 <div class="col-xs-12 col-sm-4">
                     <div>
                         <h3 class="title">Address</h3>
@@ -44,7 +44,7 @@
                     </div>
                 </div>
 
-                <div  class="thumbnail col-xs-12 col-sm-8" >
+                <div ng-cloak class="thumbnail col-xs-12 col-sm-8" >
                     <div id="map" class="map-locationpage"></div>
                 </div>
             </div>

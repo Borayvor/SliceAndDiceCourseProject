@@ -10,6 +10,10 @@
   font-family: 'Helvetica-Bold';
   src: url("fonts/helvetica-bold/Helvetica-Bold.otf") format("opentype"); }
 
+@media (max-width: 400px) {
+  #wrapper #contentMain .contentMain-header #myCuisineCarousel > div {
+    min-height: 106px !important; } }
+
 @media (max-width: 767px) {
   #wrapper #nav-after {
     display: none; }
@@ -27,18 +31,24 @@
         border-bottom: 1px solid #a29d79; }
   #wrapper #contentMain .contentMain-header .header-title {
     padding-top: 30px; }
+  #wrapper #contentMain .contentMain-header #myCuisineCarousel > div {
+    min-height: 132px; }
   #wrapper #contentMain .contentMain-header #myCuisineCarousel .carousel-inner .container .carousel-caption .header-title {
     display: none !important; }
   #wrapper #contentMain .contentMain-header #myCuisineCarousel .carousel-inner .container .carousel-caption .header-body {
     display: none !important; } }
 
-@media (max-width: 991px) {
+@media (min-width: 767px) and (max-width: 991px) {
+  #wrapper #contentMain .contentMain-header #myCuisineCarousel > div {
+    min-height: 254px; }
   #wrapper #contentMain .contentMain-header #myCuisineCarousel .carousel-inner .container .carousel-caption .header-title {
     font-size: 3em !important; }
   #wrapper #contentMain .contentMain-header #myCuisineCarousel .carousel-inner .container .carousel-caption .header-body {
     display: none !important; } }
 
-@media (max-width: 1199px) {
+@media (min-width: 991px) and (max-width: 1199px) {
+  #wrapper #contentMain .contentMain-header #myCuisineCarousel > div {
+    min-height: 329px; }
   #wrapper #contentMain .contentMain-header #myCuisineCarousel .carousel-inner .container .carousel-caption .header-title {
     font-size: 3em !important; }
   #wrapper #contentMain .contentMain-header #myCuisineCarousel .carousel-inner .container .carousel-caption .header-body {
@@ -159,6 +169,8 @@ body {
       font-weight: bold;
       font-size: 1.2em;
       text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6), 0 0 1em black, 0 0 0.2em black; }
+    #wrapper .contentMain-header #myCuisineCarousel > div {
+      min-height: 398px; }
     #wrapper .contentMain-header #myCuisineCarousel .carousel-indicators {
       bottom: -5px; }
     #wrapper .contentMain-header #myCuisineCarousel img {

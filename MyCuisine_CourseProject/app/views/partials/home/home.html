@@ -1,5 +1,5 @@
-﻿<div class="contentMain-header" ng-cloak>
-    <div id="myCuisineCarousel" class="carousel slide" data-ride="carousel">
+﻿<div class="contentMain-header" >
+    <div id="myCuisineCarousel" ng-cloak class="carousel slide" data-ride="carousel">
         <!-- Indicators -->
         <ol id="carousel-indicators" class="carousel-indicators">
             <li data-target="#myCuisineCarousel" ng-repeat="carouselItem in vm.carouselItems" ng-class="{active: (carouselItem.position === 0)}" data-slide-to="{{carouselItem.position}}"></li>
@@ -52,7 +52,7 @@
     <div id="content-area-container" class="container">
         <div class="content-items row">
 
-            <div id="recommendations" class="col-xs-12 col-sm-6 col-md-4">
+            <div id="recommendations" ng-cloak class="col-xs-12 col-sm-6 col-md-4">
                 <h3 class="title">Chef's Recommendations</h3>
                 <div class="recommendation row" ng-show="menuItem.recommendation" ng-repeat="menuItem in vm.menuItems">
                     <div class="thumb col-xs-12 col-sm-4">
@@ -68,7 +68,7 @@
             </div>
 
 
-            <div id="location-home"  class="col-xs-12 col-sm-6 col-md-4">
+            <div id="location-home" ng-cloak class="col-xs-12 col-sm-6 col-md-4">
                 <h3 class="title">Location and hours of operation</h3>
                 <div class="row">
                     <div class="thumbnail col-xs-12 col-sm-10">
@@ -84,7 +84,7 @@
             </div>
 
 
-            <div id="testimonials" class="col-xs-12 col-sm-6 col-md-4">
+            <div id="testimonials" ng-cloak class="col-xs-12 col-sm-6 col-md-4">
                 <h3 class="title">Customer Testimonials</h3>
                 <div class="testimonial panel panel-default">
                     <div class="panel-body">
