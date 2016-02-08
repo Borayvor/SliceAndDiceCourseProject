@@ -73,9 +73,7 @@
     <Content Include="app\css\site.min.css">
       <DependentUpon>site.css</DependentUpon>
     </Content>
-    <Content Include="app\images\carouserl\slide-1.jpg" />
-    <Content Include="app\images\carouserl\slide-2.jpg" />
-    <Content Include="app\images\carouserl\slide-3.jpg" />
+    <Content Include="app\images\favicon.ico" />
     <Content Include="app\images\FooterDecoration.png" />
     <Content Include="app\images\LogoFooter.png" />
     <Content Include="app\js\common\headerAndBreadcrumps-service.js" />
