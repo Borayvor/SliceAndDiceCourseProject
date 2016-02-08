@@ -1,15 +1,13 @@
 ﻿(function () {
     'use strict';
 
-    function menuController($location, menuService, menuCategoryService) {
+    function menuController(menuService, menuCategoryService, headerAndBreadcrumpsService) {
         var vm = this;
        
         vm.menuItems = {};
-        vm.menuCategory = {};
-        vm.location = $location.path().slice(1).split('/');
-        vm.headerTitle = vm.location[1];
-        vm.headerBody = 'Fusce nunc diam suscipit a iaculis ac tristique ac erat.';
-        vm.currentLocation = vm.location.pop();
+        vm.menuCategory = {};        
+
+        headerAndBreadcrumpsService.set(vm, '', 'Fusce nunc diam suscipit a iaculis ac tristique ac erat.');
 
         menuService.getAll()
             .then(function (result) {                
@@ -23,5 +21,9 @@
     }
 
     angular.module('MyCuisine.controllers')
-        .controller('MenuController', ['$location', 'menuService', 'menuCategoryService', menuController]);
+        .controller('MenuController', [
+            'menuService',
+            'menuCategoryService',
+            'headerAndBreadcrumpsService',
+            menuController]);
 }());

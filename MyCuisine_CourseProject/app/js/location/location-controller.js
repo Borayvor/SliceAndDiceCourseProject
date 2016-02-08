@@ -1,14 +1,12 @@
 ﻿(function () {
     'use strict';
 
-    function locationController($location, locationService) {
+    function locationController(locationService, headerAndBreadcrumpsService) {
         var vm = this;
 
         vm.info = {};
-        vm.location = $location.path().slice(1).split('/');
-        vm.headerTitle = vm.location[1];
-        vm.headerBody = 'Fusce nunc diam suscipit a iaculis ac tristique ac erat.';
-        vm.currentLocation = vm.location.pop();
+        
+        headerAndBreadcrumpsService.set(vm, '','Fusce nunc diam suscipit a iaculis ac tristique ac erat.');
         
         locationService.getAll()
             .then(function (result) {
@@ -19,5 +17,8 @@
     }
 
     angular.module('MyCuisine.controllers')
-        .controller('LocationController', ['$location', 'locationService', locationController]);
+        .controller('LocationController', [
+            'locationService',
+            'headerAndBreadcrumpsService',
+            locationController]);
 }());
