@@ -79,6 +79,7 @@
     <Content Include="app\images\FooterDecoration.png" />
     <Content Include="app\images\LogoFooter.png" />
     <Content Include="app\js\common\headerAndBreadcrumps-service.js" />
+    <Content Include="app\js\common\not-found-controller.js" />
     <Content Include="app\js\directives\breadcrumbs-directive.js" />
     <Content Include="app\js\directives\footer-common-directive.js" />
     <Content Include="app\js\directives\footer-home-directive.js" />

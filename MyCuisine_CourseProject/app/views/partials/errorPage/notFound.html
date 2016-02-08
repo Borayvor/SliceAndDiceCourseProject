@@ -1,40 +1,28 @@
-﻿<div class="contentMain-header">
-    <div class="container">
-        <div>
-            <h1 class="header-title">Page not found</h1>
-            <p class="header-body">
-                ...
-            </p>
+﻿<div ng-controller="NotFoundController as vm">
+    <div class="contentMain-header" header-common-directive>
+        
+    </div>
+
+    <!-- content -->
+    
+    <div class="contentMain-content-area">
+        <div breadcrumbs-directive>
+            
         </div>
-    </div>
-</div>
 
-<!-- content -->
-
-<div class="contentMain-content-area">
-    <div>
-        <div id="breadcrumbs">
-            <div class="container">
-                <ol class="breadcrumb pull-left">
-                    <li><a href="#/">Home</a></li>
-                    <li class="active">Not Found</li>
-                </ol>
-            </div>
+        <!-- content-area -->
+    
+        <div class="content-area-container container" ng-cloak>
+            <div class="content-items row">
+                <div class="error-page bg-danger text-info text-center col-xs-12">
+                    <p>Page can not be found.</p>
+                    <p>Use the menu above or below.</p>
+                </div>
+            </div><!-- end .content-items -->
         </div>
+    </div><!-- end content-area -->
+
+    <div class="content-footer text-center" footer-home-directive>
+
     </div>
-
-    <!-- content-area -->
-
-    <div class="content-area-container container" ng-cloak>
-        <div class="content-items row">
-            <div class="error-page bg-danger text-info text-center col-xs-12">
-                <p>Page can not be found.</p>
-                <p>Use the menu above or below.</p>
-            </div>
-        </div><!-- end .content-items -->
-    </div>
-</div><!-- end content-area -->
-
-<div class="content-footer text-center" footer-home-directive>
-
 </div>

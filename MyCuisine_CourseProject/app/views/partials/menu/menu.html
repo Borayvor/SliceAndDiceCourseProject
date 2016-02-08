@@ -18,12 +18,12 @@
                 <h3 class="title">{{category.name}}</h3>
                 <div class="recommendation row" ng-show="category.name === menuItem.category.name" ng-repeat="menuItem in vm.menuItems">
                     <div class="thumb col-xs-12 col-sm-4">
-                        <a href="#/{{menuItem.category.name}}/{{menuItem.title}}">
+                        <a href="#/Home/Menu/{{menuItem.category.name}}/{{menuItem.title}}">
                             <img ng-src="{{menuItem.image.url}}" class="img-thumbnail" alt="{{menuItem.title}}">
                         </a>
                     </div>
                     <div class="recommendation-body col-xs-12 col-sm-8">
-                        <h3><a href="#/{{menuItem.category.name}}/{{menuItem.title}}">{{menuItem.title}}</a></h3>
+                        <h3><a href="#/Home/Menu/{{menuItem.category.name}}/{{menuItem.title}}">{{menuItem.title}}</a></h3>
                         <p>{{menuItem.description}}</p>
                     </div>
                 </div>

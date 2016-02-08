@@ -21,11 +21,8 @@
                 templateUrl: PARTIALS_PREFIX + 'menu/menu.html',
                 controller: 'MenuController',
                 controllerAs: CONTROLLER_AS_VIEW_MODEL
-            })
-            .when('/Home/NotFound', {
-                templateUrl: PARTIALS_PREFIX + 'errorPage/notFound.html'
-            })
-            .otherwise({ redirectTo: '/Home/NotFound' });
+            })            
+            .otherwise({ templateUrl: PARTIALS_PREFIX + 'errorPage/notFound.html' });
 
     }
 
