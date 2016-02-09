@@ -262,6 +262,15 @@ body {
         margin-bottom: 10px;
         height: 69px;
         width: 69px;
+
+        img{
+            height: 100%;
+        }
+    }
+
+    .row{
+        margin-left: 0;
+        margin-right: 0;
     }
 
     #nav-after {
@@ -487,10 +496,7 @@ body {
                         letter-spacing: -1px;
                     }
 
-                    .recommendation {
-                        padding-right: 15px;
-                        padding-left: 15px;
-
+                    .recommendation {                       
                         @include clear_h_tags_margin_padding ();
 
                         .recommendation-body {
@@ -518,13 +524,7 @@ body {
                         }
                     }
 
-                    #location-home {
-
-                        .row {
-                            padding-right: 15px;
-                            padding-left: 15px;
-                        }
-
+                    #location-home {                        
                         #map {
                             height: 150px;
                         }

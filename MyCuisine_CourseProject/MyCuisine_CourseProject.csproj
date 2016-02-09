@@ -76,6 +76,7 @@
     <Content Include="app\images\favicon.ico" />
     <Content Include="app\images\FooterDecoration.png" />
     <Content Include="app\images\LogoFooter.png" />
+    <Content Include="app\js\blog\blog-controller.js" />
     <Content Include="app\js\common\headerAndBreadcrumps-service.js" />
     <Content Include="app\js\common\not-found-controller.js" />
     <Content Include="app\js\directives\breadcrumbs-directive.js" />
@@ -101,6 +102,7 @@
     <Content Include="app\views\partials\errorPage\notFound.html" />
     <Content Include="app\views\partials\location\location.html" />
     <Content Include="app\views\partials\menu\menu.html" />
+    <Content Include="app\views\partials\blog\blog.html" />
     <Content Include="bower_components\angular-bootstrap\index.js" />
     <Content Include="bower_components\angular-bootstrap\ui-bootstrap-csp.css" />
     <Content Include="bower_components\angular-bootstrap\ui-bootstrap-tpls.js" />

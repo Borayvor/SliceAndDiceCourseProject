@@ -22,6 +22,11 @@
                 controller: 'MenuController',
                 controllerAs: CONTROLLER_AS_VIEW_MODEL
             })
+            .when('/Home/Blog', {
+                templateUrl: PARTIALS_PREFIX + 'blog/blog.html',
+                controller: 'BlogController',
+                controllerAs: CONTROLLER_AS_VIEW_MODEL
+            })
             .otherwise({ templateUrl: PARTIALS_PREFIX + 'errorPage/notFound.html' });
 
     }
