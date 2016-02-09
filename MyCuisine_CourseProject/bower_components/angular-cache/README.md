@@ -469,7 +469,7 @@ app.service('myService', function (CacheFactory) {
 });
 ```
 
-Documentation on the interface that must be implemented by any storageImpl polyfill used by angular-cache can be found on the W3C Recommendation page for webstorage. The interface itself looks like:
+Documentation on the interface that must be implemented by any storageImpl polyfill used by angular-cache can be found on the W3C menu-item page for webstorage. The interface itself looks like:
 
 ```
 interface Storage {

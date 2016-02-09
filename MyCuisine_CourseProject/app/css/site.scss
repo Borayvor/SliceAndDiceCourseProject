@@ -57,7 +57,7 @@
 }
 
 @mixin slogan_breadcrumb($min-height, $border-bottom, $background-color, $margin-bottom) {
-    min-height: $min-height;    
+    min-height: $min-height;
     border-bottom: $border-bottom;
     background-color: $background-color;
     margin-bottom: $margin-bottom;
@@ -263,18 +263,17 @@ body {
         height: 69px;
         width: 69px;
 
-        img{
+        img {
             height: 100%;
         }
     }
 
-    .row{
+    .row {
         margin-left: 0;
         margin-right: 0;
     }
 
-    .recent-data{
-
+    .recent-data {
     }
 
     #nav-after {
@@ -426,7 +425,7 @@ body {
             background-color: #eeebd0;
             border-bottom: $content_border_bottom;
 
-            #breadcrumbs {   
+            #breadcrumbs {
                 @include slogan_breadcrumb($breadcrumb_height, $content_border_bottom, $slogan_breadcrumb_background-color, $slogan_breadcrumb_margin-bottom);
 
                 .container {
@@ -459,7 +458,7 @@ body {
                 }
             }
 
-            #slogan {                
+            #slogan {
                 @include slogan_breadcrumb($slogan_height, $content_border_bottom, $slogan_breadcrumb_background-color, $slogan_breadcrumb_margin-bottom);
 
                 .container {
@@ -500,17 +499,31 @@ body {
                         letter-spacing: -1px;
                     }
 
-                    .recommendation {                       
+                    .menu-item {
                         @include clear_h_tags_margin_padding ();
 
-                        .recommendation-body {
+                        .menu-item-body {
                             padding: 0;
                             padding-bottom: 10px;
                         }
                     }
 
-                    #menu-page-content{
+                    #blog-page-content {
 
+                        aside {
+                            line-height: 26px;
+                            
+                            .recent-data {
+                                margin-bottom: 30px;
+                                a {
+                                    font-family: Georgia;
+                                    color: #442917;
+                                }
+                            }
+                        }
+                    }
+
+                    #menu-page-content {
                     }
 
                     #location-page-content {
@@ -532,7 +545,7 @@ body {
                         }
                     }
 
-                    #location-home {                        
+                    #location-home {
                         #map {
                             height: 150px;
                         }
