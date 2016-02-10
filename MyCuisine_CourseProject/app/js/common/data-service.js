@@ -8,8 +8,7 @@
 
             $http
                 .get(baseUrl + url, { 
-                    params: params,
-                    cache: true,
+                    params: params,                    
                     headers: {                        
                         'X-Parse-Application-Id': 'XB25RbwIJJMPcISUFMd8yho2qwX3Kpt9useEL0eP',
                         'X-Parse-REST-API-Key': 'q4rQJ2UDIPwxbXw0QWPdKz7VBj1RFz0pGiedBgib'

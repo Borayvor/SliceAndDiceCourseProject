@@ -31,7 +31,7 @@
 
     }
 
-    function run($http, $cookies, $rootScope, $location, CacheFactory) {
+    function run($http, $cookies, $rootScope, $location) {
 
         Parse.initialize(
            "XB25RbwIJJMPcISUFMd8yho2qwX3Kpt9useEL0eP",
@@ -42,13 +42,7 @@
                 $location.path('/');
             }
 
-        });
-
-        $http.defaults.cache = CacheFactory('defaultCache', {
-            maxAge: 15 * 60 * 1000,
-            cacheFlushInterval: 60 * 60 * 1000,
-            deleteOnExpire: 'aggressive'
-        });
+        });        
     }
 
     angular.module('MyCuisine.services', []);
@@ -59,12 +53,11 @@
     angular.module('MyCuisine', [
         'ngRoute',
         'ngCookies',
-        'ui.bootstrap',
-        'angular-cache',
+        'ui.bootstrap',        
         'MyCuisine.controllers',
         'MyCuisine.directives',
         'MyCuisine.filters'])
         .config(['$routeProvider', config])
-        .run(['$http', '$cookies', '$rootScope', '$location', 'CacheFactory', run])
+        .run(['$http', '$cookies', '$rootScope', '$location', run])
         .constant('baseServiceUrl', 'https://api.parse.com/1/');
 }());
