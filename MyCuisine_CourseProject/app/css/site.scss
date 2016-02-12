@@ -554,10 +554,10 @@ body {
                         color: $content_items_light_color;
                         line-height: 2em;
 
-                        .comment-add{
+                        .comment-add {
                             color: $content_items_dark_color;
-                        }   
-                                             
+                        }
+
                         .post {
                             .thumb {
                                 width: 219px;
@@ -565,8 +565,8 @@ body {
                             }
                         }
 
-                        .post-comments {  
-                            .comment-title{
+                        .post-comments {
+                            .comment-title {
                                 color: $content_items_dark_color;
                                 font-style: normal;
                                 font-weight: bold;
@@ -575,7 +575,7 @@ body {
                             .thumb {
                                 margin-bottom: 20px;
                             }
-                            
+
                             .comment {
                                 div:nth-child(2) {
                                     padding-right: 0 !important;
@@ -586,7 +586,7 @@ body {
 
                         aside {
                             line-height: 26px;
-
+                            
                             .recent-data {
                                 margin-bottom: 30px;
 
