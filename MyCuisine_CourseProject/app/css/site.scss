@@ -13,11 +13,18 @@
     src: url('fonts/helvetica-bold/Helvetica-Bold.otf') format('opentype');
 }
 
-@mixin linear-gradient ($color_start, $color_middle, $color_end, $pos_start, $pos_middle, $pos_end) {
+@mixin linear-gradient-header ($color_start, $pos_start, $color_middle, $pos_middle, $color_end, $pos_end) {
     background: $color_start; /* Old browsers */
     background: -moz-radial-gradient(bottom, ellipse cover, $color_start $pos_start, $color_middle $pos_middle, $color_end $pos_end); /* FF3.6-15 */
     background: -webkit-radial-gradient(bottom, ellipse cover, $color_start $pos_start, $color_middle $pos_middle, $color_end $pos_end); /* Chrome10-25,Safari5.1-6 */
     background: -radial-gradient(ellipse at bottom, $color_start $pos_start, $color_middle $pos_middle, $color_end $pos_end); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+}
+
+@mixin linear-gradient-button ($color_start, $pos_start, $color_end, $pos_end) {
+    background: $color_start; /* Old browsers */
+    background: -moz-radial-gradient(top, $color_start $pos_start, $color_end $pos_end); /* FF3.6-15 */
+    background: -webkit-radial-gradient(top, $color_start $pos_start, $color_end $pos_end); /* Chrome10-25,Safari5.1-6 */
+    background: -radial-gradient(to bottom, $color_start $pos_start, $color_end $pos_end); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 }
 
 @mixin font_normal_LeagueGothic_Regular () {
@@ -247,14 +254,20 @@ body {
     }
 
     .browse-content-btn {
-        color: #fff;
-        background-color: #719655;
+        color: #fff;        
         border-radius: 18px;
         border: 1px solid rgba(65, 58, 39, 0.80);
         text-shadow: $text_shadow_black;
         font-style: normal;
-        font-size: 1.3em;
-    }
+        font-size: 1.3em;        
+        @include linear-gradient-button(#88b467, 0%, #698d4d, 100%);
+
+        &:focus {
+            outline: none;
+        }
+
+        
+    }       
 
     .thumb {
         padding: 0;
@@ -368,7 +381,7 @@ body {
         }
 
         .contentMain-header {
-            @include linear-gradient($carousel_color_start, $carousel_color_middle, $carousel_color_end, $carousel_pos_start, $carousel_pos_middle, $carousel_pos_end);
+            @include linear-gradient-header($carousel_color_start, $carousel_pos_start, $carousel_color_middle, $carousel_pos_middle, $carousel_color_end, $carousel_pos_end);
             color: #fff;
 
             .container {
@@ -428,11 +441,35 @@ body {
             #breadcrumbs {
                 @include slogan_breadcrumb($breadcrumb_height, $content_border_bottom, $slogan_breadcrumb_background-color, $slogan_breadcrumb_margin-bottom);
 
+                .myCuisine-search {
+                    height: 37px;
+                    padding-top: (($breadcrumb_height / 4) - 3);
+
+                    #search-input {                                               
+                        border-radius: 20px;
+                        white-space: nowrap;
+                        font-style: italic;
+                        margin-right: 5px;
+                        padding: 8px 18px;
+                        width: 155px;
+                        vertical-align: middle;
+                        color: #858585;
+                        border: 1px solid #b1b1b1;
+                        box-shadow: inset 0 2px 0 2px #e0e0e0;
+                        text-shadow: $text_shadow_white;
+                        @include linear-gradient-button(#e0e0e0, 0%, #f6f6f6, 100%);
+
+                        &:focus{
+                            outline: none;                            
+                        }
+                    }
+                }
+
                 .container {
                     .breadcrumb {
                         font-size: 1.2em;
                         margin: 0;
-                        padding: ($breadcrumb_height / 3) 15px ($breadcrumb_height / 3) 0;
+                        padding: (($breadcrumb_height / 3) + 2) 15px 0 0;
                         list-style: none;
                         background-color: transparent;
                         border: none;
@@ -512,9 +549,10 @@ body {
 
                         aside {
                             line-height: 26px;
-                            
+
                             .recent-data {
                                 margin-bottom: 30px;
+
                                 a {
                                     font-family: Georgia;
                                     color: #442917;
@@ -574,8 +612,8 @@ body {
             }
 
             #btn-browse-menu {
-                .browse-content-btn {
-                    background-color: #a9a57e;
+                .browse-content-btn {                    
+                    @include linear-gradient-button(#c1bb8c, 0%, #9b9773, 100%);
                 }
             }
         }

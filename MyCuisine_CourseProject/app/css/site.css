@@ -74,12 +74,21 @@ body {
     font-size: 3em; }
   #wrapper .browse-content-btn {
     color: #fff;
-    background-color: #719655;
     border-radius: 18px;
     border: 1px solid rgba(65, 58, 39, 0.8);
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6), 0 0 1em black, 0 0 0.2em black;
     font-style: normal;
-    font-size: 1.3em; }
+    font-size: 1.3em;
+    background: #88b467;
+    /* Old browsers */
+    background: -moz-radial-gradient(top, #88b467 0%, #698d4d 100%);
+    /* FF3.6-15 */
+    background: -webkit-radial-gradient(top, #88b467 0%, #698d4d 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: -radial-gradient(to bottom, #88b467 0%, #698d4d 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ }
+    #wrapper .browse-content-btn:focus {
+      outline: none; }
   #wrapper .thumb {
     padding: 0;
     margin-right: 15px;
@@ -199,10 +208,35 @@ body {
       border-bottom: 1px solid #716851;
       background-color: #fbfbf8;
       margin-bottom: 57px; }
+      #wrapper #contentMain .contentMain-content-area #breadcrumbs .myCuisine-search {
+        height: 37px;
+        padding-top: 15px; }
+        #wrapper #contentMain .contentMain-content-area #breadcrumbs .myCuisine-search #search-input {
+          border-radius: 20px;
+          white-space: nowrap;
+          font-style: italic;
+          margin-right: 5px;
+          padding: 8px 18px;
+          width: 155px;
+          vertical-align: middle;
+          color: #858585;
+          border: 1px solid #b1b1b1;
+          box-shadow: inset 0 2px 0 2px #e0e0e0;
+          text-shadow: 1px 1px 1px #fff;
+          background: #e0e0e0;
+          /* Old browsers */
+          background: -moz-radial-gradient(top, #e0e0e0 0%, #f6f6f6 100%);
+          /* FF3.6-15 */
+          background: -webkit-radial-gradient(top, #e0e0e0 0%, #f6f6f6 100%);
+          /* Chrome10-25,Safari5.1-6 */
+          background: -radial-gradient(to bottom, #e0e0e0 0%, #f6f6f6 100%);
+          /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ }
+          #wrapper #contentMain .contentMain-content-area #breadcrumbs .myCuisine-search #search-input:focus {
+            outline: none; }
       #wrapper #contentMain .contentMain-content-area #breadcrumbs .container .breadcrumb {
         font-size: 1.2em;
         margin: 0;
-        padding: 24px 15px 24px 0;
+        padding: 26px 15px 0 0;
         list-style: none;
         background-color: transparent;
         border: none;
@@ -279,7 +313,14 @@ body {
             margin: 0;
             padding: 0; }
     #wrapper #contentMain .contentMain-content-area #btn-browse-menu .browse-content-btn {
-      background-color: #a9a57e; }
+      background: #c1bb8c;
+      /* Old browsers */
+      background: -moz-radial-gradient(top, #c1bb8c 0%, #9b9773 100%);
+      /* FF3.6-15 */
+      background: -webkit-radial-gradient(top, #c1bb8c 0%, #9b9773 100%);
+      /* Chrome10-25,Safari5.1-6 */
+      background: -radial-gradient(to bottom, #c1bb8c 0%, #9b9773 100%);
+      /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ }
   #wrapper #contentMain .content-footer {
     padding-top: 35px;
     background-color: #f2f1e8; }
