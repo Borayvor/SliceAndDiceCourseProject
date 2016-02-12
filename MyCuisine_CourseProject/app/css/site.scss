@@ -126,6 +126,7 @@ $testimonial_box_shadow: 1px 1px 1px rgba(81, 51, 27, 0.6), 0 0 1em #51331b, 0 0
             margin-top: 0 !important;
 
             nav {
+                box-shadow: none !important;
 
                 #myCuisine-navbar-collapse {
                     background-color: $nav_top_background_color;
@@ -254,20 +255,18 @@ body {
     }
 
     .browse-content-btn {
-        color: #fff;        
+        color: #fff;
         border-radius: 18px;
         border: 1px solid rgba(65, 58, 39, 0.80);
         text-shadow: $text_shadow_black;
         font-style: normal;
-        font-size: 1.3em;        
+        font-size: 1.3em;
         @include linear-gradient-button(#88b467, 0%, #698d4d, 100%);
 
         &:focus {
             outline: none;
         }
-
-        
-    }       
+    }
 
     .thumb {
         padding: 0;
@@ -302,7 +301,7 @@ body {
         background-color: $nav_top_background_color;
         height: $nav_top_height;
         z-index: 998;
-        box-shadow: 0 2px 2px black;
+        box-shadow: 0 3px 3px black;
     }
 
     #myCuisine-header {
@@ -320,7 +319,7 @@ body {
             background-color: $nav_top_background_color;
             color: $nav_top_color;
             height: $nav_top_height;
-            box-shadow: -2px 2px 2px black;
+            box-shadow: -3px 3px 3px black;
 
             .navbar-header {
                 height: $nav_top_height;
@@ -440,16 +439,21 @@ body {
 
             #breadcrumbs {
                 @include slogan_breadcrumb($breadcrumb_height, $content_border_bottom, $slogan_breadcrumb_background-color, $slogan_breadcrumb_margin-bottom);
+                
+                
 
-                .myCuisine-search {
-                    height: 37px;
-                    padding-top: (($breadcrumb_height / 4) - 3);
+                .container {
+                    .myCuisine-search {
+                    padding-top: 13px;
 
-                    #search-input {                                               
+                    input{
+                        margin: 5px;
+                    }
+
+                    #search-input {
                         border-radius: 20px;
                         white-space: nowrap;
-                        font-style: italic;
-                        margin-right: 5px;
+                        font-style: italic;                        
                         padding: 8px 18px;
                         width: 155px;
                         vertical-align: middle;
@@ -459,13 +463,12 @@ body {
                         text-shadow: $text_shadow_white;
                         @include linear-gradient-button(#e0e0e0, 0%, #f6f6f6, 100%);
 
-                        &:focus{
-                            outline: none;                            
+                        &:focus {
+                            outline: none;
                         }
                     }
                 }
 
-                .container {
                     .breadcrumb {
                         font-size: 1.2em;
                         margin: 0;
@@ -612,7 +615,7 @@ body {
             }
 
             #btn-browse-menu {
-                .browse-content-btn {                    
+                .browse-content-btn {
                     @include linear-gradient-button(#c1bb8c, 0%, #9b9773, 100%);
                 }
             }

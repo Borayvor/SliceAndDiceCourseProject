@@ -20,15 +20,17 @@
   #wrapper #myCuisine-header {
     position: relative !important;
     margin-top: 0 !important; }
-    #wrapper #myCuisine-header nav #myCuisine-navbar-collapse {
-      background-color: #989180;
-      float: left !important;
-      width: 100%; }
-      #wrapper #myCuisine-header nav #myCuisine-navbar-collapse .navbar-nav {
-        margin: 0 -15px; }
-      #wrapper #myCuisine-header nav #myCuisine-navbar-collapse li {
-        text-align: center;
-        border-bottom: 1px solid #a29d79; }
+    #wrapper #myCuisine-header nav {
+      box-shadow: none !important; }
+      #wrapper #myCuisine-header nav #myCuisine-navbar-collapse {
+        background-color: #989180;
+        float: left !important;
+        width: 100%; }
+        #wrapper #myCuisine-header nav #myCuisine-navbar-collapse .navbar-nav {
+          margin: 0 -15px; }
+        #wrapper #myCuisine-header nav #myCuisine-navbar-collapse li {
+          text-align: center;
+          border-bottom: 1px solid #a29d79; }
   #wrapper #contentMain .contentMain-header .header-title {
     padding-top: 30px !important; }
   #wrapper #contentMain .contentMain-header #myCuisineCarousel > div {
@@ -113,7 +115,7 @@ body {
     background-color: #989180;
     height: 67px;
     z-index: 998;
-    box-shadow: 0 2px 2px black; }
+    box-shadow: 0 3px 3px black; }
   #wrapper #myCuisine-header {
     position: absolute;
     margin: 0;
@@ -128,7 +130,7 @@ body {
       background-color: #989180;
       color: #fff;
       height: 67px;
-      box-shadow: -2px 2px 2px black; }
+      box-shadow: -3px 3px 3px black; }
       #wrapper #myCuisine-header nav .navbar-header {
         height: 67px; }
         #wrapper #myCuisine-header nav .navbar-header #logo {
@@ -208,14 +210,14 @@ body {
       border-bottom: 1px solid #716851;
       background-color: #fbfbf8;
       margin-bottom: 57px; }
-      #wrapper #contentMain .contentMain-content-area #breadcrumbs .myCuisine-search {
-        height: 37px;
-        padding-top: 15px; }
-        #wrapper #contentMain .contentMain-content-area #breadcrumbs .myCuisine-search #search-input {
+      #wrapper #contentMain .contentMain-content-area #breadcrumbs .container .myCuisine-search {
+        padding-top: 13px; }
+        #wrapper #contentMain .contentMain-content-area #breadcrumbs .container .myCuisine-search input {
+          margin: 5px; }
+        #wrapper #contentMain .contentMain-content-area #breadcrumbs .container .myCuisine-search #search-input {
           border-radius: 20px;
           white-space: nowrap;
           font-style: italic;
-          margin-right: 5px;
           padding: 8px 18px;
           width: 155px;
           vertical-align: middle;
@@ -231,7 +233,7 @@ body {
           /* Chrome10-25,Safari5.1-6 */
           background: -radial-gradient(to bottom, #e0e0e0 0%, #f6f6f6 100%);
           /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ }
-          #wrapper #contentMain .contentMain-content-area #breadcrumbs .myCuisine-search #search-input:focus {
+          #wrapper #contentMain .contentMain-content-area #breadcrumbs .container .myCuisine-search #search-input:focus {
             outline: none; }
       #wrapper #contentMain .contentMain-content-area #breadcrumbs .container .breadcrumb {
         font-size: 1.2em;
