@@ -588,7 +588,7 @@ body {
 
                         aside {
                             line-height: 26px;
-                            
+                                                        
                             .recent-data {
                                 margin-bottom: 30px;
 
@@ -597,7 +597,7 @@ body {
 
                                     a {
                                         font-family: Georgia;
-                                        color: #442917;
+                                        color: $content_items_light_color;
                                     }
                                 }
                             }
