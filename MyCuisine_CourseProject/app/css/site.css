@@ -67,7 +67,7 @@ body {
   padding: 0;
   font-family: Georgia, serif;
   font-size: 12px;
-  color: #716851;
+  color: #6c634b;
   background-color: #f2f1e8;
   text-shadow: 1px 1px 1px #fff; }
   #wrapper .error-page {
@@ -288,32 +288,39 @@ body {
         #wrapper #contentMain .contentMain-content-area .content-area-container .content-items .menu-item .menu-item-body {
           padding: 0;
           padding-bottom: 10px; }
-        #wrapper #contentMain .contentMain-content-area .content-area-container .content-items #blog-page-content .comment-add {
-          color: #442917; }
-        #wrapper #contentMain .contentMain-content-area .content-area-container .content-items #blog-page-content .post .thumb {
-          width: 219px;
-          height: 219px; }
-        #wrapper #contentMain .contentMain-content-area .content-area-container .content-items #blog-page-content .post-comments .thumb {
-          margin-bottom: 20px; }
-        #wrapper #contentMain .contentMain-content-area .content-area-container .content-items #blog-page-content .post-comments .comment div:nth-child(2) {
-          padding-right: 0 !important;
-          padding-left: 0 !important; }
-        #wrapper #contentMain .contentMain-content-area .content-area-container .content-items #blog-page-content aside {
-          line-height: 26px; }
-          #wrapper #contentMain .contentMain-content-area .content-area-container .content-items #blog-page-content aside .recent-data {
-            margin-bottom: 30px; }
-            #wrapper #contentMain .contentMain-content-area .content-area-container .content-items #blog-page-content aside .recent-data ul {
-              padding-left: 10px; }
-              #wrapper #contentMain .contentMain-content-area .content-area-container .content-items #blog-page-content aside .recent-data ul a {
-                font-family: Georgia;
-                color: #442917; }
+        #wrapper #contentMain .contentMain-content-area .content-area-container .content-items #blog-page-content {
+          color: #6c634b;
+          line-height: 2em; }
+          #wrapper #contentMain .contentMain-content-area .content-area-container .content-items #blog-page-content .comment-add {
+            color: #442917; }
+          #wrapper #contentMain .contentMain-content-area .content-area-container .content-items #blog-page-content .post .thumb {
+            width: 219px;
+            height: 219px; }
+          #wrapper #contentMain .contentMain-content-area .content-area-container .content-items #blog-page-content .post-comments .comment-title {
+            color: #442917;
+            font-style: normal;
+            font-weight: bold; }
+          #wrapper #contentMain .contentMain-content-area .content-area-container .content-items #blog-page-content .post-comments .thumb {
+            margin-bottom: 20px; }
+          #wrapper #contentMain .contentMain-content-area .content-area-container .content-items #blog-page-content .post-comments .comment div:nth-child(2) {
+            padding-right: 0 !important;
+            padding-left: 0 !important; }
+          #wrapper #contentMain .contentMain-content-area .content-area-container .content-items #blog-page-content aside {
+            line-height: 26px; }
+            #wrapper #contentMain .contentMain-content-area .content-area-container .content-items #blog-page-content aside .recent-data {
+              margin-bottom: 30px; }
+              #wrapper #contentMain .contentMain-content-area .content-area-container .content-items #blog-page-content aside .recent-data ul {
+                padding-left: 10px; }
+                #wrapper #contentMain .contentMain-content-area .content-area-container .content-items #blog-page-content aside .recent-data ul a {
+                  font-family: Georgia;
+                  color: #442917; }
         #wrapper #contentMain .contentMain-content-area .content-area-container .content-items #location-page-content .thumbnail #map {
           height: 400px; }
         #wrapper #contentMain .contentMain-content-area .content-area-container .content-items #location-page-content p {
           color: #442917;
           font-size: 1.3em; }
           #wrapper #contentMain .contentMain-content-area .content-area-container .content-items #location-page-content p span {
-            color: #716851; }
+            color: #6c634b; }
         #wrapper #contentMain .contentMain-content-area .content-area-container .content-items #location-home #map {
           height: 150px; }
         #wrapper #contentMain .contentMain-content-area .content-area-container .content-items #location-home .work-time {

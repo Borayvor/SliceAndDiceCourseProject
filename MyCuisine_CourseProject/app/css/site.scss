@@ -91,6 +91,7 @@ $slogan_breadcrumb_background-color: #fbfbf8;
 $slogan_breadcrumb_margin-bottom: 57px;
 
 $content_border_bottom: 1px solid #716851;
+$content_items_light_color: #6c634b;
 $content_items_dark_color: #442917;
 
 $nav_bottom_button_color_active: #a29d79;
@@ -244,7 +245,7 @@ body {
     padding: 0;
     font-family: Georgia, serif;
     font-size: 12px;
-    color: #716851;
+    color: $content_items_light_color;
     background-color: #f2f1e8;
     text-shadow: $text_shadow_white;
 
@@ -550,6 +551,9 @@ body {
                     }
 
                     #blog-page-content {
+                        color: $content_items_light_color;
+                        line-height: 2em;
+
                         .comment-add{
                             color: $content_items_dark_color;
                         }   
@@ -561,7 +565,13 @@ body {
                             }
                         }
 
-                        .post-comments {
+                        .post-comments {  
+                            .comment-title{
+                                color: $content_items_dark_color;
+                                font-style: normal;
+                                font-weight: bold;
+                            }
+
                             .thumb {
                                 margin-bottom: 20px;
                             }
@@ -609,7 +619,7 @@ body {
                             font-size: 1.3em;
 
                             span {
-                                color: #716851;
+                                color: $content_items_light_color;
                             }
                         }
                     }
