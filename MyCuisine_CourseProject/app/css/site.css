@@ -288,6 +288,8 @@ body {
         #wrapper #contentMain .contentMain-content-area .content-area-container .content-items .menu-item .menu-item-body {
           padding: 0;
           padding-bottom: 10px; }
+        #wrapper #contentMain .contentMain-content-area .content-area-container .content-items #blog-page-content .comment-add {
+          color: #442917; }
         #wrapper #contentMain .contentMain-content-area .content-area-container .content-items #blog-page-content .post .thumb {
           width: 219px;
           height: 219px; }

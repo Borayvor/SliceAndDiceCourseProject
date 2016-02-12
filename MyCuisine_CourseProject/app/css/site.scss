@@ -550,7 +550,10 @@ body {
                     }
 
                     #blog-page-content {
-
+                        .comment-add{
+                            color: $content_items_dark_color;
+                        }   
+                                             
                         .post {
                             .thumb {
                                 width: 219px;
