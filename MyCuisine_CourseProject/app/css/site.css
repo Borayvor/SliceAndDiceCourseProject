@@ -81,6 +81,8 @@ body {
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6), 0 0 1em black, 0 0 0.2em black;
     font-style: normal;
     font-size: 1.3em;
+    max-width: 250px !important;
+    overflow: hidden;
     background: #88b467;
     /* Old browsers */
     background: -moz-radial-gradient(top, #88b467 0%, #698d4d 100%);

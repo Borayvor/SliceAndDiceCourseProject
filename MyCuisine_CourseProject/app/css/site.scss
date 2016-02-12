@@ -262,6 +262,8 @@ body {
         text-shadow: $text_shadow_black;
         font-style: normal;
         font-size: 1.3em;
+        max-width: 250px !important;
+        overflow: hidden;
         @include linear-gradient-button(#88b467, 0%, #698d4d, 100%);
 
         &:focus {
