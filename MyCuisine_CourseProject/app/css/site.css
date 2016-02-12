@@ -219,7 +219,7 @@ body {
           white-space: nowrap;
           font-style: italic;
           padding: 8px 18px;
-          width: 155px;
+          width: 180px;
           vertical-align: middle;
           color: #858585;
           border: 1px solid #b1b1b1;
@@ -291,9 +291,11 @@ body {
           line-height: 26px; }
           #wrapper #contentMain .contentMain-content-area .content-area-container .content-items #blog-page-content aside .recent-data {
             margin-bottom: 30px; }
-            #wrapper #contentMain .contentMain-content-area .content-area-container .content-items #blog-page-content aside .recent-data a {
-              font-family: Georgia;
-              color: #442917; }
+            #wrapper #contentMain .contentMain-content-area .content-area-container .content-items #blog-page-content aside .recent-data ul {
+              padding-left: 10px; }
+              #wrapper #contentMain .contentMain-content-area .content-area-container .content-items #blog-page-content aside .recent-data ul a {
+                font-family: Georgia;
+                color: #442917; }
         #wrapper #contentMain .contentMain-content-area .content-area-container .content-items #location-page-content .thumbnail #map {
           height: 400px; }
         #wrapper #contentMain .contentMain-content-area .content-area-container .content-items #location-page-content p {
