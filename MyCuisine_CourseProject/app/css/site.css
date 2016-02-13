@@ -319,7 +319,7 @@ body {
         #wrapper #contentMain .contentMain-content-area .content-area-container .content-items #menu-page-content .menu-item-price {
           display: block;
           position: absolute;
-          background: url(../app/images/PriceLabel.png) no-repeat bottom left;
+          background: url(../images/PriceLabel.png) no-repeat bottom left;
           top: 12px;
           left: -8px;
           font-size: 18px;
