@@ -316,6 +316,21 @@ body {
                 #wrapper #contentMain .contentMain-content-area .content-area-container .content-items #blog-page-content aside .recent-data ul a {
                   font-family: Georgia;
                   color: #6c634b; }
+        #wrapper #contentMain .contentMain-content-area .content-area-container .content-items #menu-page-content .menu-item-price {
+          display: block;
+          position: absolute;
+          background: url(/app/images/PriceLabel.png) no-repeat bottom left;
+          top: 12px;
+          left: -8px;
+          font-size: 18px;
+          padding-left: 8px;
+          color: white;
+          text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6), 0 0 1em black, 0 0 0.2em black;
+          letter-spacing: 1px;
+          padding: 3px;
+          padding-bottom: 8px; }
+          #wrapper #contentMain .contentMain-content-area .content-area-container .content-items #menu-page-content .menu-item-price > span {
+            margin: 2px; }
         #wrapper #contentMain .contentMain-content-area .content-area-container .content-items #location-page-content .thumbnail #map {
           height: 400px; }
         #wrapper #contentMain .contentMain-content-area .content-area-container .content-items #location-page-content p {

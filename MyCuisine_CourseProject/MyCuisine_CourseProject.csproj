@@ -76,6 +76,7 @@
     <Content Include="app\images\favicon.ico" />
     <Content Include="app\images\FooterDecoration.png" />
     <Content Include="app\images\LogoFooter.png" />
+    <Content Include="app\images\PriceLabel.png" />
     <Content Include="app\js\blog\blog-controller.js" />
     <Content Include="app\js\common\headerAndBreadcrumps-service.js" />
     <Content Include="app\js\common\not-found-controller.js" />

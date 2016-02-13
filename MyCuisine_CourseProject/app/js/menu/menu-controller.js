@@ -12,8 +12,6 @@
         menuService.getAll()
             .then(function (result) {                
                 vm.menuItems = result.results;
-
-                console.log(vm.menuItems);
             });
 
         menuCategoryService.getAll()
