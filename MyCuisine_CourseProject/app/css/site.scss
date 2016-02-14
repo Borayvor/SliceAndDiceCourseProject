@@ -111,8 +111,19 @@ $testimonial_box_shadow: 1px 1px 1px rgba(81, 51, 27, 0.6), 0 0 1em #51331b, 0 0
                         min-height: 94px !important;
                     }
 
-                    .carousel-caption{
+                    .carousel-caption {
                         left: 11%;
+                    }
+                }
+            }
+
+            .contentMain-content-area {
+                .content-area-container {
+                    .content-items {
+                        .menu-item-body {
+                            float: left;
+                            width: 100% !important;
+                        }
                     }
                 }
             }
@@ -259,17 +270,17 @@ body {
         font-size: 3em;
     }
 
-    .browse-content-btn {        
+    .browse-content-btn {
         border-radius: 18px;
         border: 1px solid rgba(65, 58, 39, 0.80);
         text-shadow: $text_shadow_black;
         color: #fff;
         text-align: center;
         font-style: normal;
-        font-size: 1.3em; 
+        font-size: 1.3em;
         @include linear-gradient-button(#88b467, 0%, #698d4d, 100%);
 
-        &.home-menu-btn{                   
+        &.home-menu-btn {
             width: 250px !important;
             overflow: hidden;
         }
@@ -297,7 +308,8 @@ body {
         margin-right: 0;
     }
 
-    .recent-data {
+    p{
+        text-wrap: normal;
     }
 
     #nav-after {
@@ -617,20 +629,19 @@ body {
                             display: block;
                             position: absolute;
                             background: url(../images/PriceLabel.png) no-repeat bottom left;
-                            
                             top: 12px;
                             left: -8px;
                             font-size: 18px;
                             padding-left: 8px;
                             color: white;
                             text-shadow: $text_shadow_black;
-                            letter-spacing: 1px;  
+                            letter-spacing: 1px;
                             padding: 3px;
                             padding-bottom: 8px;
-                            
-                            & > span{
+
+                            & > span {
                                 margin: 2px;
-                            }                                                   
+                            }
                         }
                     }
 

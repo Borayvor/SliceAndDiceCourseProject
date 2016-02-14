@@ -14,7 +14,10 @@
   #wrapper #contentMain .contentMain-header #myCuisineCarousel > div {
     min-height: 94px !important; }
   #wrapper #contentMain .contentMain-header #myCuisineCarousel .carousel-caption {
-    left: 11%; } }
+    left: 11%; }
+  #wrapper #contentMain .contentMain-content-area .content-area-container .content-items .menu-item-body {
+    float: left;
+    width: 100% !important; } }
 
 @media (max-width: 767px) {
   #wrapper #nav-after {
@@ -109,6 +112,8 @@ body {
   #wrapper .row {
     margin-left: 0;
     margin-right: 0; }
+  #wrapper p {
+    text-wrap: normal; }
   #wrapper #nav-after {
     position: absolute;
     margin: 0;
