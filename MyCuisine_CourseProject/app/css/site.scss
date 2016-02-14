@@ -110,6 +110,10 @@ $testimonial_box_shadow: 1px 1px 1px rgba(81, 51, 27, 0.6), 0 0 1em #51331b, 0 0
                     & > div {
                         min-height: 94px !important;
                     }
+
+                    .carousel-caption{
+                        left: 11%;
+                    }
                 }
             }
         }
@@ -255,16 +259,20 @@ body {
         font-size: 3em;
     }
 
-    .browse-content-btn {
-        color: #fff;
+    .browse-content-btn {        
         border-radius: 18px;
         border: 1px solid rgba(65, 58, 39, 0.80);
         text-shadow: $text_shadow_black;
+        color: #fff;
+        text-align: center;
         font-style: normal;
-        font-size: 1.3em;
-        max-width: 250px !important;
-        overflow: hidden;
+        font-size: 1.3em; 
         @include linear-gradient-button(#88b467, 0%, #698d4d, 100%);
+
+        &.home-menu-btn{                   
+            width: 250px !important;
+            overflow: hidden;
+        }
 
         &:focus {
             outline: none;

@@ -12,7 +12,9 @@
 
 @media (max-width: 400px) {
   #wrapper #contentMain .contentMain-header #myCuisineCarousel > div {
-    min-height: 94px !important; } }
+    min-height: 94px !important; }
+  #wrapper #contentMain .contentMain-header #myCuisineCarousel .carousel-caption {
+    left: 11%; } }
 
 @media (max-width: 767px) {
   #wrapper #nav-after {
@@ -75,14 +77,13 @@ body {
     font-style: normal;
     font-size: 3em; }
   #wrapper .browse-content-btn {
-    color: #fff;
     border-radius: 18px;
     border: 1px solid rgba(65, 58, 39, 0.8);
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6), 0 0 1em black, 0 0 0.2em black;
+    color: #fff;
+    text-align: center;
     font-style: normal;
     font-size: 1.3em;
-    max-width: 250px !important;
-    overflow: hidden;
     background: #88b467;
     /* Old browsers */
     background: -moz-radial-gradient(top, #88b467 0%, #698d4d 100%);
@@ -91,6 +92,9 @@ body {
     /* Chrome10-25,Safari5.1-6 */
     background: -radial-gradient(to bottom, #88b467 0%, #698d4d 100%);
     /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */ }
+    #wrapper .browse-content-btn.home-menu-btn {
+      width: 250px !important;
+      overflow: hidden; }
     #wrapper .browse-content-btn:focus {
       outline: none; }
   #wrapper .thumb {
