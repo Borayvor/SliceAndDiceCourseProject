@@ -3,7 +3,7 @@
 
     function locationService(data) {
 
-        var Url = 'classes/Info';
+        var Url = 'data/Info';
 
         function getAll() {
 

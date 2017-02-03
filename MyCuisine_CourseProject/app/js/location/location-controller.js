@@ -10,7 +10,7 @@
         
         locationService.getAll()
             .then(function (result) {
-                vm.info = result.results[0];
+                vm.info = result.data[0];
             });
 
         locationService.getMap();

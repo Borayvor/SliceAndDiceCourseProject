@@ -3,7 +3,7 @@
 
     function testimonialsService(data) {
 
-        var URL = 'classes/Testimonials?include=customer';
+        var URL = 'data/Testimonials';
 
         function getAll() {
             return data.get(URL);

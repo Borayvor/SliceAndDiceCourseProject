@@ -10,8 +10,9 @@
                 .get(baseUrl + url, { 
                     params: params,                    
                     headers: {                        
-                        'X-Parse-Application-Id': 'XB25RbwIJJMPcISUFMd8yho2qwX3Kpt9useEL0eP',
-                        'X-Parse-REST-API-Key': 'q4rQJ2UDIPwxbXw0QWPdKz7VBj1RFz0pGiedBgib'
+                        'application-id': '939DE2E3-9FEA-0725-FF31-8B881022B300',
+                        'secret-key': '1CB59391-C2B3-887A-FFB8-7843EA0E7100',
+                        'application-type': 'REST'
                     }
                 })
                 .then(function (response) {                    

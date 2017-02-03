@@ -20,7 +20,7 @@
                     <div class="menu-item row" ng-show="category.name === menuItem.category.name" ng-repeat="menuItem in vm.menuItems">
                         <div class="thumb col-xs-12 col-sm-4">
                             <a href="#/Home/Menu/{{menuItem.category.name}}/{{menuItem.title}}">
-                                <img ng-src="{{menuItem.image.url}}" class="img-thumbnail" alt="{{menuItem.title}}">
+                                <img ng-src="{{menuItem.image}}" class="img-thumbnail" alt="{{menuItem.title}}">
                                 <span class="menu-item-price"><span>${{menuItem.price}}</span></span>
                             </a>
                         </div>

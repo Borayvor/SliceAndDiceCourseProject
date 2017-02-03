@@ -3,7 +3,7 @@
 
     function menuCategoryService(data) {
 
-        var Url = 'classes/Category';
+        var Url = 'data/Category';
 
         function getAll() {
 

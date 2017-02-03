@@ -7,7 +7,7 @@
     <!-- Wrapper for slides -->
     <div class="carousel-inner">
         <div ng-class="{item: true, active : (carouselItem.position === 0)}" ng-repeat="carouselItem in vm.carouselItems">
-            <img ng-src="{{carouselItem.image.url}}" alt="{{carouselItem.title}}">
+            <img ng-src="{{carouselItem.image}}" alt="{{carouselItem.title}}">
             <div class="container">
                 <div class="carousel-caption">
                     <h1 class="header-title">{{carouselItem.title}}</h1>

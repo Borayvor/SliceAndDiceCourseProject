@@ -33,9 +33,9 @@
 
     function run($http, $cookies, $rootScope, $location) {
 
-        Parse.initialize(
-           "XB25RbwIJJMPcISUFMd8yho2qwX3Kpt9useEL0eP",
-           "7MDaeNRThiXJi8nm7yWIR32FPorDbj9wUkBFtEev");
+        ////Parse.initialize(
+        ////   "XB25RbwIJJMPcISUFMd8yho2qwX3Kpt9useEL0eP",
+        ////   "7MDaeNRThiXJi8nm7yWIR32FPorDbj9wUkBFtEev");
 
         $rootScope.$on('$routeChangeError', function (ev, current, previous, rejection) {
             if (rejection === 'not authorized') {
@@ -59,5 +59,5 @@
         'MyCuisine.filters'])
         .config(['$routeProvider', config])
         .run(['$http', '$cookies', '$rootScope', '$location', run])
-        .constant('baseServiceUrl', 'https://api.parse.com/1/');
+        .constant('baseServiceUrl', 'https://api.backendless.com/v1/');
 }());

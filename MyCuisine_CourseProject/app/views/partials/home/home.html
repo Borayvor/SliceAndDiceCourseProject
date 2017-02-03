@@ -16,7 +16,7 @@
                     <div class="menu-item row" ng-show="menuItem.recommendation" ng-repeat="menuItem in vm.menuItems">
                         <div class="thumb col-xs-12 col-sm-4">
                             <a href="#/Home/Menu/{{menuItem.category.name}}/{{menuItem.title}}">
-                                <img ng-src="{{menuItem.image.url}}" class="img-thumbnail" alt="{{menuItem.title}}">
+                                <img ng-src="{{menuItem.image}}" class="img-thumbnail" alt="{{menuItem.title}}">
                             </a>
                         </div>
                         <div class="menu-item-body col-sm-8">
@@ -48,7 +48,7 @@
                     <div class="testimonial panel panel-default">
                         <div class="panel-body">
                             <div class="thumb pull-left">
-                                <img ng-src="{{vm.testimonial.customer.avatar.url}}" class="img-thumbnail" alt="{{vm.testimonial.customer.firstName}} {{vm.testimonial.customer.lastName}}">
+                                <img ng-src="{{vm.testimonial.customer.avatar}}" class="img-thumbnail" alt="{{vm.testimonial.customer.firstName}} {{vm.testimonial.customer.lastName}}">
                             </div>
                             <h3><a href="#/Home/Blog/Users/{{vm.testimonial.customer.username}}">{{vm.testimonial.customer.firstName}}&nbsp;{{vm.testimonial.customer.lastName}}</a></h3>
                             <p>{{vm.testimonial.content}}</p>

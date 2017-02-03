@@ -11,12 +11,19 @@
 
         menuService.getAll()
             .then(function (result) {                
-                vm.menuItems = result.results;
+                vm.menuItems = result.data;
             });
 
         menuCategoryService.getAll()
             .then(function (result) {
-                vm.menuCategory = result.results;
+                var reordered = [];
+                var len = result.data.length;
+
+                for (var i = len - 1; i >= 0; i -= 1){
+                    reordered.push(result.data[i]);
+                }
+
+                vm.menuCategory = reordered;
             });
     }
 

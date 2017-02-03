@@ -3,7 +3,7 @@
 
     function carouselService(data) {
 
-        var URL = 'classes/HeaderItem';
+        var URL = 'data/HeaderItem';
 
         function getAll() {
             return data.get(URL);

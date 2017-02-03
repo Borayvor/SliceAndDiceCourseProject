@@ -3,16 +3,17 @@
 
     function menuService(data) {
 
-        var Url = 'classes/Menu?include=category';
+        var Url = 'data/Menu';
         
-        function getAll() {            
+        function getAll() {
+            var urlPageSize = Url + '?pageSize=100';
 
-            return data.get(Url);
+            return data.get(urlPageSize);
         }
 
         function getRecommended() {
 
-            var urlRecommended = Url + '&where={"recommendation":true}';
+            var urlRecommended = Url + '?where=recommendation=true';
 
             return data.get(urlRecommended);
         }
